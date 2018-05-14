@@ -1,0 +1,21 @@
+.primary-nav{
+
+    float: right;
+    position: relative;
+    bottom: 0;
+
+
+    li {
+        list-style: none;
+        padding-right: 7px;
+        display: inline-block;
+
+        @mixin atMedium{
+            float: left;
+            display: block;
+            padding-right: 20px;
+        }
+    }
+
+}
+

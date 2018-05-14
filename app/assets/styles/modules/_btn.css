@@ -1,0 +1,6 @@
+.btn {
+    border: solid #ff6666 3px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.5em;
+    background-color: rgba(255,255,255,.85);
+}

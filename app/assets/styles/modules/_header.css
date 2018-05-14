@@ -1,0 +1,12 @@
+.header {
+
+    &__logo {
+        height: 140px;
+        padding: 30px;
+        display: inline-block;
+    }
+
+    &__links {
+        list-style-type: none;
+    }
+}
