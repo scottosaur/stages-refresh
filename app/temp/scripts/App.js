@@ -76,17 +76,6 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import MobileMenu from './modules/MobileMenu';
-// import RevealOnScroll from './modules/RevealOnScroll';
-// import StickyHeader from './modules/StickyHeader';
-// import Modal from './modules/Modal';
-
-var mobileMenu = new MobileMenu();
-var stickyHeader = new StickyHeader();
-var modal = new Modal();
-new RevealOnScroll((0, _jquery2.default)(".feature-item"), "85%");
-new RevealOnScroll((0, _jquery2.default)(".testimonial"), "60%");
-
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
