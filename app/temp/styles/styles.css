@@ -476,7 +476,7 @@ a {
     height: 525px;
     text-align: center;
     background-position: center; 
-    border-bottom: solid #00acff 4px;
+    border-bottom: solid #00acff 10px;
 }
 
 .large-hero__headline {
@@ -497,7 +497,7 @@ a {
 
 .header__logo {
         height: 140px;
-        padding: 30px;
+        padding: 15px 15px 10px 20px;
         display: inline-block;
     }
 
@@ -527,3 +527,94 @@ a {
             padding-right: 20px
     }
     }
+
+.wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+
+.headline{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-weight: 100;
+    color: #111111;
+
+    margin: 2.5rem auto 2.5rem auto;
+}
+
+.headline strong {
+        color: #111111;
+        font-family: 'Channel', serif;
+    }
+
+.box {
+    display: inline-block;
+    width: 230px;
+    padding: 1rem;
+    overflow: visible;
+    position: relative;
+}
+
+.box--teal{
+        margin-top: 260px;
+        background-color: #33cccd;
+    }
+
+.box--red{
+        margin-top: 260px;
+        background-color: #fd6565;
+    }
+
+.box--purple{
+        margin-top: 260px;
+        background-color: #9966cc;
+    }
+
+.box--green{
+        margin-top: 260px;
+        background-color: #81d7c0;
+    }
+
+.box__breakout-image {
+        position: absolute;  
+        left: 0;
+        right: 0;
+        top: 2px;
+        -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+        margin: auto;
+    }
+
+.box__box-content {
+
+    }
+
+.box__title {
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: auto;
+    }
+
+.box__text {
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+.offerings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}

@@ -1,0 +1,55 @@
+.box {
+    display: inline-block;
+    width: 230px;
+    padding: 1rem;
+    overflow: visible;
+    position: relative;
+    
+
+    &--teal{
+        margin-top: 260px;
+        background-color: $boxTeal;
+    }
+    &--red{
+        margin-top: 260px;
+        background-color: $boxRed;
+    }
+    &--purple{
+        margin-top: 260px;
+        background-color: $boxPurple;
+    }
+    &--green{
+        margin-top: 260px;
+        background-color: $boxGreen;
+    }
+
+    &__breakout-image {
+        position: absolute;  
+        left: 0;
+        right: 0;
+        top: 2px;
+        transform-origin: bottom center;
+        transform: translateY(-100%);
+        margin: auto;
+    }
+
+    &__box-content {
+
+    }
+
+    &__title {
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: auto;
+    }
+
+    &__text {
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,13 @@
+.headline{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-weight: 100;
+    color: $mainText;
+
+    margin: 2.5rem auto 2.5rem auto;
+
+    strong {
+        color: $mainText;
+        font-family: 'Channel', serif;
+    }
+}
