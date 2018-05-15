@@ -1,5 +1,5 @@
 .large-hero {
-    background-image: url('/assets/images/hero-background.jpg');
+    background-image: url('./assets/images/hero-background.jpg');
     background-size: cover;
     height: 525px;
     text-align: center;
