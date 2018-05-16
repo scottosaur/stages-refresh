@@ -3,11 +3,13 @@
     text-align: center;
     font-weight: 100;
     color: $mainText;
+    line-height: 2.2rem;
 
     margin: 2.5rem auto 2.5rem auto;
 
     strong {
+        line-height: 1rem;
         color: $mainText;
-        font-family: 'Channel', serif;
+        font-family: 'channelregular', serif;
     }
 }
