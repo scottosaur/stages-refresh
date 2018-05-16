@@ -5,21 +5,20 @@
     overflow: visible;
     position: relative;
     
-
     &--teal{
-        margin-top: 260px;
+        margin-top: 245px;
         background-color: $boxTeal;
     }
     &--red{
-        margin-top: 260px;
+        margin-top: 245px;
         background-color: $boxRed;
     }
     &--purple{
-        margin-top: 260px;
+        margin-top: 245px;
         background-color: $boxPurple;
     }
     &--green{
-        margin-top: 260px;
+        margin-top: 245px;
         background-color: $boxGreen;
     }
 
