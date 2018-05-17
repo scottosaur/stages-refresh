@@ -12,3 +12,7 @@
 @import "modules/_headline";
 @import "modules/_box";
 @import "modules/_offerings";
+@import "modules/_content-column";
+@import "modules/_row";
+@import "modules/_card";
+@import "modules/_container";

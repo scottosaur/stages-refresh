@@ -1,0 +1,9 @@
+.container {
+
+    padding: 1px;
+
+    &--blue{
+        background-color: $mainBlue;
+        // height: 700px;
+    }
+}
