@@ -1,54 +1,81 @@
 .box {
-    display: inline-block;
+  display: inline-block;
+  width: 230px;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  overflow: visible;
+  position: relative;
+
+  transition: all 0.2s ease-out;
+
+  &--teal {
+    margin-top: 245px;
+    background-color: $boxTeal;
+  }
+  &--red {
+    margin-top: 245px;
+    background-color: $boxRed;
+  }
+  &--purple {
+    margin-top: 245px;
+    background-color: $boxPurple;
+  }
+  &--green {
+    margin-top: 245px;
+    background-color: $boxGreen;
+  }
+
+  &__breakout-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2px;
+    transform-origin: bottom center;
+    transform: translateY(-100%);
+    margin: auto;
+    transition: opacity 0.2s ease-in;
+  }
+
+  &__photo {
+    height: 265px;
     width: 230px;
-    padding: 1rem;
-    overflow: visible;
-    position: relative;
-    
-    &--teal{
-        margin-top: 245px;
-        background-color: $boxTeal;
-    }
-    &--red{
-        margin-top: 245px;
-        background-color: $boxRed;
-    }
-    &--purple{
-        margin-top: 245px;
-        background-color: $boxPurple;
-    }
-    &--green{
-        margin-top: 245px;
-        background-color: $boxGreen;
-    }
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.4s ease-in;
+  }
 
-    &__breakout-image {
-        position: absolute;  
-        left: 0;
-        right: 0;
-        top: 2px;
-        transform-origin: bottom center;
-        transform: translateY(-100%);
-        margin: auto;
-    }
+  &__box-content {
+  }
 
-    &__box-content {
+  &__title {
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: auto;
+  }
 
-    }
+  &__text {
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+  }
 
-    &__title {
-        font-weight: 600;
-        color: #fff;
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 0;
-        margin: auto;
-    }
+  &:hover {
+    transform: scale(1.1);
+    z-index: 3;
+  }
 
-    &__text {
-        font-weight: 300;
-        color: #fff;
-        text-align: center;
-        font-size: 1.2rem;
-    }
+  &:hover &__photo {
+    opacity: 1;
+  }
+
+  &:hover &__breakout-image {
+    opacity: 0;
+  }
 }
