@@ -450,6 +450,30 @@ template {
   display: none;
 }
 
+// .color-primary-0 { color: #00ACFF }
+
+/* Main Primary color */
+
+// .color-primary-1 { color: #34BBFC }
+
+// .color-primary-2 { color: #0AAFFF }
+
+// .color-primary-3 { color: #0078B2 }
+
+// .color-primary-4 { color: #005B87 }
+
+// .color-complement-0 { color: #FF8900 }
+
+/* Main Complement color */
+
+// .color-complement-1 { color: #FF9C2A }
+
+// .color-complement-2 { color: #FF8900 }
+
+// .color-complement-3 { color: #FF8900 }
+
+// .color-complement-4 { color: #D57200 }
+
 @font-face {
     font-family: 'channelregular';
     src: url('../fonts/channel-webfont.woff2') format('woff2'),
@@ -486,6 +510,7 @@ a {
     background-position: center; 
     border-bottom: solid #00acff 10px;
     padding-top: 265px;
+    margin-top: 140px;
 }
 
 .large-hero__headline {
@@ -516,6 +541,8 @@ a {
   }
 
 .header {
+    position: fixed;
+    background-color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -525,13 +552,24 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    height: 145px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 
 }
 
 .header__logo {
-        height: 140px;
+        height: 100%;
         padding: 15px 15px 10px 20px;
         display: inline-block;
+    }
+
+.header--reduced {
+        height: 60px;
+        background-color: rgba(255, 255, 255, .85);
     }
 
 .primary-nav{
@@ -734,6 +772,11 @@ a {
                 flex: 1;
     }
 
+.card__title {
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+    }
+
 .card__content {
         -webkit-box-flex: 2;
             -ms-flex: 2;
@@ -750,3 +793,8 @@ a {
         background-color: #00acff;
         // height: 700px;
     }
+
+.footer {
+    background-color: #121212;
+    height: 50px;
+}

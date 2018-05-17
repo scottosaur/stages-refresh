@@ -2,7 +2,19 @@ $mainBlue: #00acff;
 $mainPink: #ff6666;
 $mainText: #111111;
 
-$boxGreen: #81d7c0;
-$boxPurple: #9966cc;
-$boxRed: #fd6565;
 $boxTeal: #33cccd;
+$boxRed: #fd6565;
+$boxPurple: #9966cc;
+$boxGreen: #81d7c0;
+
+// .color-primary-0 { color: #00ACFF }	/* Main Primary color */
+// .color-primary-1 { color: #34BBFC }
+// .color-primary-2 { color: #0AAFFF }
+// .color-primary-3 { color: #0078B2 }
+// .color-primary-4 { color: #005B87 }
+
+// .color-complement-0 { color: #FF8900 }	/* Main Complement color */
+// .color-complement-1 { color: #FF9C2A }
+// .color-complement-2 { color: #FF8900 }
+// .color-complement-3 { color: #FF8900 }
+// .color-complement-4 { color: #D57200 }

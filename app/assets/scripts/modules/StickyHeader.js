@@ -5,9 +5,10 @@ import smoothScroll from 'jquery-smooth-scroll';
 class StickyHeader {
     constructor() {
         this.lazyImages = $(".lazyload");
-        this.siteHeader = $(".site-header");
-        this.headerTriggerElement = $(".large-hero__title");
+        this.siteHeader = $(".header");
+        this.headerTriggerElement = $(".large-hero");
         this.createHeaderWaypoint();
+
         this.pageSections = $(".page-section");
         this.headerLinks = $(".primary-nav a");
 
@@ -28,13 +29,14 @@ class StickyHeader {
 
     createHeaderWaypoint() {
         var that = this;
+        console.log('this')
         new Waypoint({
             element: this.headerTriggerElement[0],
             handler: function (direction) {
                 if (direction == "down") {
-                    that.siteHeader.addClass("site-header--dark");
+                    that.siteHeader.addClass("header--reduced");
                 } else {
-                    that.siteHeader.removeClass("site-header--dark");
+                    that.siteHeader.removeClass("header--reduced");
                 }
             }
         });

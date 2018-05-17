@@ -11,6 +11,11 @@
         flex: 1;
     }
 
+    &__title {
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+    }
+
     &__content {
         flex: 2;
         padding: 2rem;
