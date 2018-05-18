@@ -10,7 +10,7 @@ class StickyHeader {
         this.createHeaderWaypoint();
 
         this.pageSections = $(".page-section");
-        this.headerLinks = $(".primary-nav a");
+        this.headerLinks = $(".primary-nav li");
 
         this.createPageSectionWaypoints();
         this.addSmoothScrolling();
@@ -37,6 +37,9 @@ class StickyHeader {
                     that.siteHeader.addClass("header--reduced");
                 } else {
                     that.siteHeader.removeClass("header--reduced");
+                    // *** This is a fix to prevent "Classes" from staying active at top of page
+                    that.headerLinks.removeClass("primary-nav__active");
+
                 }
             }
         });
@@ -46,27 +49,30 @@ class StickyHeader {
         var that = this;
         this.pageSections.each( function () {
             let currentPageSection = this;
+            console.log(this);
+            // this.hide();
             new Waypoint({
                 element: currentPageSection,
                 handler: function(direction) {
                     if (direction == "down") {
                         var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-                        that.headerLinks.removeClass("is-current-link");
-                        $(matchingHeaderLink).addClass("is-current-link");
+                        console.log('Matching: ', matchingHeaderLink)
+                        that.headerLinks.removeClass("primary-nav__active");
+                        $(matchingHeaderLink).addClass("primary-nav__active");
                     };
                 },
-                offset: "18%"
+                offset: "40%"
             });
             new Waypoint({
                 element: currentPageSection,
                 handler: function(direction) {
                     if (direction == "up") {
                         var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-                        that.headerLinks.removeClass("is-current-link");
-                        $(matchingHeaderLink).addClass("is-current-link");
+                        that.headerLinks.removeClass("primary-nav__active");
+                        $(matchingHeaderLink).addClass("primary-nav__active");
                     };
                 },
-                offset: "-40%"
+                offset: "0%"
             });
 
         });

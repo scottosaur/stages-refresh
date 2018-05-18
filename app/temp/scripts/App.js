@@ -10501,7 +10501,7 @@ var StickyHeader = function () {
         this.createHeaderWaypoint();
 
         this.pageSections = (0, _jquery2.default)(".page-section");
-        this.headerLinks = (0, _jquery2.default)(".primary-nav a");
+        this.headerLinks = (0, _jquery2.default)(".primary-nav li");
 
         this.createPageSectionWaypoints();
         this.addSmoothScrolling();
@@ -10532,6 +10532,8 @@ var StickyHeader = function () {
                         that.siteHeader.addClass("header--reduced");
                     } else {
                         that.siteHeader.removeClass("header--reduced");
+                        // *** This is a fix to prevent "Classes" from staying active at top of page
+                        that.headerLinks.removeClass("primary-nav__active");
                     }
                 }
             });
@@ -10542,27 +10544,30 @@ var StickyHeader = function () {
             var that = this;
             this.pageSections.each(function () {
                 var currentPageSection = this;
+                console.log(this);
+                // this.hide();
                 new Waypoint({
                     element: currentPageSection,
                     handler: function handler(direction) {
                         if (direction == "down") {
                             var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-                            that.headerLinks.removeClass("is-current-link");
-                            (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+                            console.log('Matching: ', matchingHeaderLink);
+                            that.headerLinks.removeClass("primary-nav__active");
+                            (0, _jquery2.default)(matchingHeaderLink).addClass("primary-nav__active");
                         };
                     },
-                    offset: "18%"
+                    offset: "40%"
                 });
                 new Waypoint({
                     element: currentPageSection,
                     handler: function handler(direction) {
                         if (direction == "up") {
                             var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-                            that.headerLinks.removeClass("is-current-link");
-                            (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+                            that.headerLinks.removeClass("primary-nav__active");
+                            (0, _jquery2.default)(matchingHeaderLink).addClass("primary-nav__active");
                         };
                     },
-                    offset: "-40%"
+                    offset: "0%"
                 });
             });
         }
