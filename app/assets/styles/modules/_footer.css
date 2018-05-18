@@ -1,4 +1,11 @@
 .footer {
-    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151515;
+    font-weight: 400;
+    color: #555;
     height: 50px;
+
+    text-align: center;
 }

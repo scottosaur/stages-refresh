@@ -1,11 +1,12 @@
 .large-hero {
-    background-image: url('/assets/images/hero-background.jpg');
+    background-image: url('/assets/images/home-hero-1.jpg');
     background-size: cover;
-    height: 525px;
+    background-origin: padding-box;
+
+    height: 625px;
     text-align: center;
-    background-position: center; 
     border-bottom: solid $mainBlue 10px;
-    padding-top: 265px;
+    padding-top: 365px;
     margin-top: 140px;
 
     &__headline {
@@ -14,8 +15,6 @@
         margin-bottom: 50px;
         font-size: 4em;
         font-weight: 400;
-        // background-color: gray;
-        
         text-shadow: 2px 2px rgba(0,0,0,.3);
     }
 }

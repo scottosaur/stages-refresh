@@ -1,12 +1,24 @@
-.primary-nav{
+.primary-nav {
+  margin-bottom: -2px;
 
-    margin-bottom: -2px;
+  li {
+    list-style: none;
+    padding-right: 15px;
+    display: inline-block;
+  }
 
-    li {
-        list-style: none;
-        padding-right: 10px;
-        display: inline-block;
-    }
+  li:last-child {
+      margin-right: 10px;
+  }
+
+  li:hover {
+      transform-origin: bottom center;
+      transform: scale(1.1);
+    //   font-weight: bold;
+  }
+
+  li a:hover {
+    color: $mainAccent;
+  }
 
 }
-
