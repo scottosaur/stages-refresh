@@ -10544,14 +10544,11 @@ var StickyHeader = function () {
             var that = this;
             this.pageSections.each(function () {
                 var currentPageSection = this;
-                console.log(this);
-                // this.hide();
                 new Waypoint({
                     element: currentPageSection,
                     handler: function handler(direction) {
                         if (direction == "down") {
                             var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-                            console.log('Matching: ', matchingHeaderLink);
                             that.headerLinks.removeClass("primary-nav__active");
                             (0, _jquery2.default)(matchingHeaderLink).addClass("primary-nav__active");
                         };

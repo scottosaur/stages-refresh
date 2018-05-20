@@ -48,14 +48,11 @@ class StickyHeader {
         var that = this;
         this.pageSections.each(function () {
             let currentPageSection = this;
-            console.log(this);
-            // this.hide();
-            new Waypoint({
+                new Waypoint({
                 element: currentPageSection,
                 handler: function (direction) {
                     if (direction == "down") {
                         var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-                        console.log('Matching: ', matchingHeaderLink)
                         that.headerLinks.removeClass("primary-nav__active");
                         $(matchingHeaderLink).addClass("primary-nav__active");
                     };
