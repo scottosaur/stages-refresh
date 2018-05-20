@@ -541,6 +541,13 @@ a {
     margin: auto;
   }
 
+.btn--text-only {
+    display: inline-block;
+    background-color: transparent;
+    font-weight: bold;
+    color: #FF8900;
+  }
+
 .btn--form {
     font-size: 1rem;
     display: block;
@@ -555,6 +562,7 @@ a {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     z-index: 3;
+    cursor: pointer;
   }
 
 .header {
@@ -638,7 +646,7 @@ a {
     color: #111111;
     line-height: 2.6rem;
 
-    margin: 2.5rem auto 2.5rem auto;
+    margin: 2.5rem auto 3.5rem auto;
 }
 
 .headline strong {
@@ -650,6 +658,7 @@ a {
 .box {
   display: inline-block;
   width: 230px;
+//   height: 265px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   overflow: visible;
   position: relative;
@@ -689,8 +698,8 @@ a {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     margin: auto;
-    -webkit-transition: opacity 0.2s ease-in;
-    transition: opacity 0.2s ease-in;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
   }
 
 .box__photo {
@@ -703,8 +712,8 @@ a {
     left: 0;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    -webkit-transition: opacity 0.4s ease-in;
-    transition: opacity 0.4s ease-in;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
   }
 
 .box__box-content {
@@ -727,6 +736,8 @@ a {
   }
 
 .box:hover {
+    -webkit-transform-origin: center -25px;
+            transform-origin: center -25px;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     z-index: 3;
@@ -809,6 +820,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -820,7 +835,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .6);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -830,6 +845,8 @@ a {
             align-items: center;
     margin-top: 35px;
     margin-bottom: 35px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
 
 .card__image {
@@ -858,10 +875,17 @@ a {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
         padding: 2rem;
+    }
+
+.card:hover{
+        background-color: rgba(255, 255, 255, 1);
     }
 
 .container {
@@ -870,6 +894,12 @@ a {
 }
 
 .container--blue{
+        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/simple-horizontal-light.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
         background-color: #00acff;
         // height: 700px;
     }

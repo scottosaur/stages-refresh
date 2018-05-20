@@ -3,6 +3,12 @@
     padding: 1px;
 
     &--blue{
+        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/simple-horizontal-light.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
         background-color: $mainBlue;
         // height: 700px;
     }

@@ -1,6 +1,7 @@
 .box {
   display: inline-block;
   width: 230px;
+//   height: 265px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   overflow: visible;
   position: relative;
@@ -32,7 +33,7 @@
     transform-origin: bottom center;
     transform: translateY(-100%);
     margin: auto;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s linear;
   }
 
   &__photo {
@@ -44,7 +45,7 @@
     top: 0;
     left: 0;
     transform: translateY(-100%);
-    transition: opacity 0.4s ease-in;
+    transition: opacity 0.2s linear;
   }
 
   &__box-content {
@@ -67,6 +68,7 @@
   }
 
   &:hover {
+    transform-origin: center -25px;
     transform: scale(1.1);
     z-index: 3;
   }

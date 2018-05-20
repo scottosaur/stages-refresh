@@ -1,11 +1,12 @@
 .card {
     padding: 0;
     display: flex;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .6);
     flex-direction: row;
     align-items: center;
     margin-top: 35px;
     margin-bottom: 35px;
+    transition: all .2s ease-out;
 
     &__image {
         flex: 1.5;
@@ -24,7 +25,12 @@
         flex: 2;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         padding: 2rem;
+    }
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 1);
     }
 }
