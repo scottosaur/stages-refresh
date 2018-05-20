@@ -39,7 +39,6 @@ class StickyHeader {
                     that.siteHeader.removeClass("header--reduced");
                     // *** This is a fix to prevent "Classes" from staying active at top of page
                     that.headerLinks.removeClass("primary-nav__active");
-
                 }
             }
         });
@@ -47,13 +46,13 @@ class StickyHeader {
 
     createPageSectionWaypoints() {
         var that = this;
-        this.pageSections.each( function () {
+        this.pageSections.each(function () {
             let currentPageSection = this;
             console.log(this);
             // this.hide();
             new Waypoint({
                 element: currentPageSection,
-                handler: function(direction) {
+                handler: function (direction) {
                     if (direction == "down") {
                         var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
                         console.log('Matching: ', matchingHeaderLink)
@@ -65,7 +64,7 @@ class StickyHeader {
             });
             new Waypoint({
                 element: currentPageSection,
-                handler: function(direction) {
+                handler: function (direction) {
                     if (direction == "up") {
                         var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
                         that.headerLinks.removeClass("primary-nav__active");

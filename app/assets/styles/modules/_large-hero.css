@@ -1,5 +1,5 @@
 .large-hero {
-    background-image: url('/assets/images/home-hero-1.jpg');
+    background-image: url('../images/home-hero-1.jpg');
     background-size: cover;
     background-origin: padding-box;
 

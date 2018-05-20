@@ -10,6 +10,6 @@
     strong {
         line-height: 0;
         color: $mainText;
-        font-family: 'channelregular', serif;
+        font-family: 'channelregular', 'Roboto Slab', serif;
     }
 }

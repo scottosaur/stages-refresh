@@ -503,7 +503,7 @@ a {
 }
 
 .large-hero {
-    background-image: url('/assets/images/home-hero-1.jpg');
+    background-image: url('../images/home-hero-1.jpg');
     background-size: cover;
     background-origin: padding-box;
 
@@ -652,7 +652,7 @@ a {
 .headline strong {
         line-height: 0;
         color: #111111;
-        font-family: 'channelregular', serif;
+        font-family: 'channelregular', 'Roboto Slab', serif;
     }
 
 .box {
