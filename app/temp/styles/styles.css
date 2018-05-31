@@ -503,24 +503,40 @@ a {
 }
 
 .large-hero {
-    background-image: url('../images/home-hero-1.jpg');
+    
+    background-image: url('../../assets/images/home-hero-1.jpg');
     background-size: cover;
     background-origin: padding-box;
-
-    height: 625px;
+    background-position: center top;
     text-align: center;
     border-bottom: solid #00acff 10px;
-    padding-top: 365px;
-    padding-bottom: 80px;
-    margin-top: 140px;
+    padding-top: 155px;
+    
+    height: 385px;
 }
 
 .large-hero__headline {
         font-family: 'Roboto Slab', serif;
         color: #fff;
         margin-bottom: 30px;
-        font-size: 4em;
+        font-size: 2.5rem;
         font-weight: 400;
+    }
+
+@media (min-width: 800px) {
+
+.large-hero {
+
+        height: 625px;
+        padding-top: 365px;
+        padding-bottom: 80px;
+        margin-top: 140px
+}
+
+        .large-hero__headline {
+            margin-bottom: 30px;
+            font-size: 4em;
+        }
     }
 
 .btn {
@@ -566,35 +582,83 @@ a {
   }
 
 .header {
-    position: fixed;
-    background-color: #ffffff;
+
+    position: static;
+    height: 110px;
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
-    z-index: 5;
-    top: 0;
-    height: 145px;
-    -webkit-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
-.header__logo {
-        height: 100%;
-        padding: 15px 15px 10px 20px;
-        display: inline-block;
+@media (min-width: 800px) {
+
+.header {
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        z-index: 5;
+        top: 0;
+        height: 145px;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out
+
+}
+
+        .header--reduced {
+            height: 60px;
+            background-color: rgba(255, 255, 255, .85);
+        }
     }
 
-.header--reduced {
-        height: 60px;
-        background-color: rgba(255, 255, 255, .85);
+.header__logo {
+        height: 100%;
+        padding: 15px 15px 10px 0px;
+    }
+
+@media (min-width: 800px) {
+
+.header__logo {
+            padding: 15px 15px 10px 20px;
+            display: inline-block
+    }
+    }
+
+.header__menu-button {
+        font-size: 2rem;
+        visibility: visible;
+        margin-right: 25px;
+    }
+
+@media (min-width: 800px) {
+
+.header__menu-button {
+            display: none
+    }
+    }
+
+.header nav {
+        display: none;
+    }
+
+@media (min-width: 800px) {
+
+.header nav {
+            display: block
+    }
     }
 
 .primary-nav {
@@ -635,14 +699,22 @@ a {
     }
 
 .wrapper {
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
 }
+
+@media (min-width: 800px) {
+
+.wrapper {
+        max-width: 70%
+}
+    }
 
 .headline{
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-weight: 100;
+    font-size: 1.rem;
     color: #111111;
     line-height: 2.6rem;
 
@@ -655,13 +727,24 @@ a {
         font-family: 'channelregular', 'Roboto Slab', serif;
     }
 
+@media (min-width: 800px) {
+
+.headline{
+
+        font-size: 2rem
+}
+    }
+
 .box {
-  display: inline-block;
+
+  display: block;
+  
   width: 230px;
-//   height: 265px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   overflow: visible;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 
   -webkit-transition: all 0.2s ease-out;
 
@@ -732,8 +815,15 @@ a {
     font-weight: 300;
     color: #fff;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
+
+@media (min-width: 800px) {
+
+.box__text {
+      font-size: 1.2rem
+  }
+    }
 
 .box:hover {
     -webkit-transform-origin: center -25px;
@@ -751,19 +841,34 @@ a {
     opacity: 0;
   }
 
+@media (min-width: 800px) {
+
+.box {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0
+}
+    }
+
 .offerings {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    // justify-content: space-between;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    
     margin-bottom: 40px;
 }
+
+@media (min-width: 800px) {
+
+.offerings {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch
+}
+    }
 
 .content-column {
   width: 33%;
@@ -850,13 +955,24 @@ a {
 }
 
 .card__image {
-        -webkit-box-flex: 1.5;
-            -ms-flex: 1.5;
-                flex: 1.5;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        max-width: 335px;
+        min-height: 335px;
+        position: relative;
+        -ms-flex-item-align: stretch;
+            align-self: stretch;
+        overflow: hidden;
+        background-color: orange;
     }
 
 .card__image img{
-            display: block;
+            position: absolute;
+            -o-object-fit: cover;
+               object-fit: cover;
+            min-width: 100%;
+            min-height: 100%;
         }
 
 .card__title {
@@ -865,9 +981,9 @@ a {
     }
 
 .card__content {
-        -webkit-box-flex: 2;
-            -ms-flex: 2;
-                flex: 2;
+        -webkit-box-flex: 1.8;
+            -ms-flex: 1.8;
+                flex: 1.8;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -881,7 +997,7 @@ a {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding: 2rem;
+        margin: 15px 80px 15px 80px;
     }
 
 .card:hover{

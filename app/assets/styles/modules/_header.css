@@ -1,24 +1,55 @@
 .header {
-    position: fixed;
-    background-color: #ffffff;
+
+    position: static;
+    height: 110px;
+    overflow: hidden;
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
-    width: 100%;
-    z-index: 5;
-    top: 0;
-    height: 145px;
-    transition: all .2s ease-out;
+    align-items: center;
+
+    @mixin atMedium {
+        align-items: flex-end;
+        justify-content: space-between;
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        z-index: 5;
+        top: 0;
+        height: 145px;
+        transition: all .2s ease-out;
+
+        &--reduced {
+            height: 60px;
+            background-color: rgba(255, 255, 255, .85);
+        }
+    }
 
     &__logo {
         height: 100%;
-        padding: 15px 15px 10px 20px;
-        display: inline-block;
+        padding: 15px 15px 10px 0px;
+
+        @mixin atMedium {
+            padding: 15px 15px 10px 20px;
+            display: inline-block;
+        }
     }
 
-    &--reduced {
-        height: 60px;
-        background-color: rgba(255, 255, 255, .85);
+    &__menu-button {
+        font-size: 2rem;
+        visibility: visible;
+        margin-right: 25px;
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+
+    nav {
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
     }
 
 }

@@ -1,20 +1,33 @@
 .large-hero {
-    background-image: url('../images/home-hero-1.jpg');
+    
+    background-image: url('../../assets/images/home-hero-1.jpg');
     background-size: cover;
     background-origin: padding-box;
-
-    height: 625px;
+    background-position: center top;
     text-align: center;
     border-bottom: solid $mainBlue 10px;
-    padding-top: 365px;
-    padding-bottom: 80px;
-    margin-top: 140px;
+    padding-top: 155px;
+    
+    height: 385px;
 
     &__headline {
         font-family: 'Roboto Slab', serif;
         color: #fff;
         margin-bottom: 30px;
-        font-size: 4em;
+        font-size: 2.5rem;
         font-weight: 400;
+    }
+
+    @mixin atMedium {
+
+        height: 625px;
+        padding-top: 365px;
+        padding-bottom: 80px;
+        margin-top: 140px;
+
+        &__headline {
+            margin-bottom: 30px;
+            font-size: 4em;
+        }
     }
 }

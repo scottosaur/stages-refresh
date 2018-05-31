@@ -1,4 +1,8 @@
 .wrapper {
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
+
+    @mixin atMedium {
+        max-width: 70%;
+    }
 }

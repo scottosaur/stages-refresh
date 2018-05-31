@@ -1,7 +1,10 @@
 .offerings {
-    display: flex;
-    // justify-content: space-between;
-    justify-content: center;
-    align-items: stretch;
+    
     margin-bottom: 40px;
+
+    @mixin atMedium {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
 }

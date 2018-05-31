@@ -1,10 +1,13 @@
 .box {
-  display: inline-block;
+
+  display: block;
+  
   width: 230px;
-//   height: 265px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   overflow: visible;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 
   transition: all 0.2s ease-out;
 
@@ -64,7 +67,11 @@
     font-weight: 300;
     color: #fff;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+
+    @mixin atMedium {
+      font-size: 1.2rem;
+    }
   }
 
   &:hover {
@@ -79,5 +86,11 @@
 
   &:hover &__breakout-image {
     opacity: 0;
+  }
+
+  @mixin atMedium {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0; 
   }
 }
