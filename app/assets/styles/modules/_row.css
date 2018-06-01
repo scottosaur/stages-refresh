@@ -1,8 +1,21 @@
 .row {
+    
     @mixin atMedium {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding: 1rem;
+    }
+
+    &--small {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 10px 0 10px 0;
+
+        @mixin atMedium {
+            padding: 1rem;
+        }
     }
 }

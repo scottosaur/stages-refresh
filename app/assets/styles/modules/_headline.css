@@ -4,7 +4,7 @@
     font-weight: 100;
     font-size: 1.3rem;
     color: $mainText;
-    line-height: 2.6rem;
+    line-height: 2.2rem;
 
     margin: 2.5rem auto 1.5rem auto;
 
@@ -17,5 +17,6 @@
     @mixin atMedium {
         margin-bottom: 58px;
         font-size: 2rem;
+        line-height: 2.6rem;
     }
 }

@@ -19,25 +19,28 @@
     }
 
     &__image {
-        flex: 1;
         order: -1;
         max-width: 100%;
-        min-height: 335px;
+        // min-height: 335px;
         position: relative;
         align-self: stretch;
-        overflow: hidden;
-        background-color: orange;
+        // overflow: hidden;
+        // background-color: orange;
         
-        img{
-            position: absolute;
-            object-fit: cover;
-            min-width: 100%;
-            min-height: 100%;
+        @mixin atMedium {
+            min-width: 335px;
+            mi-height: 335px;
+            order: 0;
         }
 
-        @mixin atMedium {
-            max-width: 335px;
-            order: 0;
+        img{
+            min-width: 100%;
+            min-height: 100%;
+
+            @mixin atMedium {
+                position: absolute;
+                object-fit: cover;
+            }
         }
     }
 
@@ -53,10 +56,11 @@
         justify-content: space-between;
         align-items: center;
         margin: auto;
-        padding: 10px 25px 20px 25px;
+        padding: 10px 25px 25px 25px;
 
         @mixin atMedium {
             margin: 15px 80px 15px 80px;
+            padding: 10px 25px 20px 25px;
         }
     }
 
