@@ -1,6 +1,8 @@
 .offerings {
     
     margin-bottom: 40px;
+    display: flex;
+    flex-flow: row wrap;
 
     @mixin atMedium {
         display: flex;

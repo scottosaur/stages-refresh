@@ -2,11 +2,11 @@
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-weight: 100;
-    font-size: 1.rem;
+    font-size: 1.3rem;
     color: $mainText;
     line-height: 2.6rem;
 
-    margin: 2.5rem auto 3.5rem auto;
+    margin: 2.5rem auto 1.5rem auto;
 
     strong {
         line-height: 0;
@@ -15,7 +15,7 @@
     }
 
     @mixin atMedium {
-
+        margin-bottom: 58px;
         font-size: 2rem;
     }
 }

@@ -2,15 +2,26 @@
     padding: 0;
     display: flex;
     background-color: rgba(255, 255, 255, .6);
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin: 35px auto 35px auto;
+    max-width: 100%;
+
     transition: all .2s ease-out;
+    
+    @mixin atMedium {
+        flex-direction: row;
+    }
+
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 1);
+    }
 
     &__image {
         flex: 1;
-        max-width: 335px;
+        order: -1;
+        max-width: 100%;
         min-height: 335px;
         position: relative;
         align-self: stretch;
@@ -22,6 +33,11 @@
             object-fit: cover;
             min-width: 100%;
             min-height: 100%;
+        }
+
+        @mixin atMedium {
+            max-width: 335px;
+            order: 0;
         }
     }
 
@@ -36,10 +52,12 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 15px 80px 15px 80px;
+        margin: auto;
+        padding: 10px 25px 20px 25px;
+
+        @mixin atMedium {
+            margin: 15px 80px 15px 80px;
+        }
     }
 
-    &:hover{
-        background-color: rgba(255, 255, 255, 1);
-    }
 }

@@ -1,11 +1,14 @@
 .content-column {
-  width: 33%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
 
   &__title {
     font-family: "Roboto Slab", serif;
-    padding-top: 2rem;
+    padding-top: 10px;
     text-align: center;
+
   }
 
   &__input {
@@ -19,7 +22,6 @@
   }
 
   textarea {
-    // background-color: orange;
     resize: none;
     height: 8rem;
   }
@@ -31,7 +33,7 @@
   }
 
   &__icons{
-    margin-top: 80px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -39,5 +41,9 @@
     color: $mainBlue;
     align-self: center;
     justify-self: center;
+  }
+
+  @mixin atMedium {
+    width: 33%;
   }
 }

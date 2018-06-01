@@ -42,6 +42,10 @@
         @mixin atMedium {
             display: none;
         }
+
+        svg {
+            color: #fff;
+        }
     }
 
     nav {

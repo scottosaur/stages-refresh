@@ -16,3 +16,7 @@ a {
     color: #333;
     text-decoration: none;
 }
+
+svg {
+    color: $mainBlue;
+}
