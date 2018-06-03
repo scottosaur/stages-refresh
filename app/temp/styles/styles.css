@@ -589,7 +589,7 @@ svg {
 
     position: static;
     height: 110px;
-    overflow: hidden;
+    overflow: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -677,23 +677,73 @@ svg {
     list-style: none;
     padding-right: 15px;
     display: inline-block;
+    position: relative;
   }
 
 .primary-nav li:last-child {
     margin-right: 10px;
   }
 
-/*
-    li:hover {
-        transform-origin: bottom center;
-        transform: scale(1.1);
-      //   font-weight: bold;
+.primary-nav__drop-menu {
+    z-index: 5;
+    color: #00acff;
+    border-top: solid 2px #00acff;
+    background-color: white;
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    padding: 10px 25px 25px 25px;
+    min-width: 225px;
+    left: -25px;
+    top: 39px;
+  }
+
+.primary-nav__drop-menu::before {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: -30px;
+      bottom: -30px;
+      left: -30px;
+      right: -30px;
     }
 
-    li a:hover {
-      color: $mainAccent;
+.primary-nav__drop-menu li {
+      margin-top: 15px;
     }
-*/
+
+.primary-nav__drop-menu li {
+    display: list-item;
+    z-index: 5;
+  }
+
+.primary-nav__drop-link {
+    z-index: 1;
+  }
+
+.primary-nav__drop-link:hover a {
+      color: #FF8900;
+    }
+
+.primary-nav__drop-link:hover svg {
+      color: #FF8900;
+    }
+
+.primary-nav__drop-link:hover ul li a {
+    color: #00acff;
+  }
+
+.primary-nav__drop-link:hover > ul {
+    display: inherit;
+  }
+
+.primary-nav__drop-link ul li a:hover {
+    color: #FF8900;
+  }
+
+.primary-nav svg {
+    color: #333;
+  }
 
 .primary-nav__active {
     -webkit-transform-origin: bottom center;
@@ -703,6 +753,10 @@ svg {
   }
 
 .primary-nav__active a {
+      color: #FF8900;
+    }
+
+.primary-nav__active svg {
       color: #FF8900;
     }
 
@@ -723,7 +777,7 @@ svg {
     text-align: center;
     font-weight: 100;
     font-size: 1.3rem;
-    color: #111111;
+    color: #333;
     line-height: 2.2rem;
 
     margin: 2.5rem auto 1.5rem auto;
@@ -731,7 +785,7 @@ svg {
 
 .headline strong {
         line-height: 0;
-        color: #111111;
+        color: #333;
         font-family: 'channelregular', 'Roboto Slab', serif;
     }
 

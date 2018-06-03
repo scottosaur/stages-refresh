@@ -36,28 +36,64 @@
 
     <img class="header__logo" src="./assets/images/stages-logo-svg.svg">
 
-    <!-- <div class="site-header__menu-icon">
-      <div class="site-header__menu-icon__middle"></div>
-    </div> -->
-
-    <button class="header__menu-button btn">
+  <!-- begin mobile nav -->
+  <button class="header__menu-button btn">
       <i class="fas fa-bars"></i>
     </button>
-
-    <!-- <div class="">  -->
+    
+  <!-- begin desktop navbar -->
     <nav class="primary-nav">
       <ul>
-        <li id="classes-link">
+        <li id="classes-link" class="primary-nav__drop-link">
           <a href="#classes" title="Classes">Classes</a>
+          <i class="fas fa-angle-down"></i>
+          <ul class="primary-nav__drop-menu">
+            <li>
+              <a href="#" title="Newborn to 18 Months">NB to 18 Months</a>
+            </li>
+            <li>
+              <a href="#" title="18 Months to 3 Years">18 Months to 3 Years</a>
+            </li>
+            <li>
+              <a href="#" title="3 Years to 5 Years">3 Years to 5 Years</a>
+            </li>
+            <li>
+              <a href="#" title="K to 6th Grade">K to 6th Grade</a>
+            </li>
+          </ul>
         </li>
-        <li id="camps-link">
+        <li id="camps-link" class="primary-nav__drop-link">
           <a href="#camps" title="Camps">Camps</a>
+          <i class="fas fa-angle-down"></i>
+          <ul class="primary-nav__drop-menu">
+            <li>
+              <a href="#" title="Mini Camp">Mini Camp</a>
+            </li>
+            <li>
+              <a href="#" title="Little Stars">Little Stars</a>
+            </li>
+          </ul>
         </li>
         <li id="parties-and-events-link">
           <a href="#parties-and-events" title="Parties & Events">Parties & Events</a>
         </li>
-        <li id="locations-link">
+        <li id="locations-link" class="primary-nav__drop-link">
           <a href="#locations" title="Locations">Locations</a>
+          <i class="fas fa-angle-down"></i>
+          <ul class="primary-nav__drop-menu">
+            <li>
+              <a href="#" title="West Loop">West Loop</a>
+            </li>
+            <li>
+              <a href="#" title="Lincoln Park">Lincoln Park</a>
+            </li>
+            <li>
+              <a href="#" title="River North">River North</a>
+            </li>
+            <li>
+              <a href="#" title="Highland Park">Highland Park</a>
+            </li>
+          </ul>
         </li>
         <li id="contact-link">
           <a href="#contact" title="Contact Us">Contact Us</a>
@@ -223,7 +259,16 @@
       <h1 class="content-column__title">Recent</h1>
       <div class="content-column__inner-scroll">
         <div id="pixlee_container"></div>
-        <script type="text/javascript">window.PixleeAsyncInit = function () { Pixlee.init({ apiKey: 'vZiZB9rB979YTzz7WC' }); Pixlee.addSimpleWidget({ widgetId: '4987' }); };</script>
+        <script type="text/javascript">
+          window.PixleeAsyncInit = function () {
+            Pixlee.init({
+              apiKey: 'vZiZB9rB979YTzz7WC'
+            });
+            Pixlee.addSimpleWidget({
+              widgetId: '4987'
+            });
+          };
+        </script>
         <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
       </div>
       <script async defer src="//www.instagram.com/embed.js"></script>
