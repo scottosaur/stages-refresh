@@ -658,13 +658,13 @@ svg {
             color: #fff;
         }
 
-.header nav {
+.header .primary-nav {
         display: none;
     }
 
 @media (min-width: 800px) {
 
-.header nav {
+.header .primary-nav {
             display: block
     }
     }
@@ -1194,3 +1194,49 @@ svg {
 
     text-align: center;
 }
+
+.mobile-menu {
+  width: 100%;
+  background-color: #eee;
+  display: block;
+  margin: 0;
+  border-top: 2px solid #00acff;
+  border-bottom: 2px solid #00acff;
+  text-align: center;
+  // position: relative;
+}
+
+.mobile-menu button {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+  }
+
+.mobile-menu__item-list {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    background-color: #ffffff;
+    text-align: left;
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 35px 0px 35px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    list-style-type: none;
+  }
+
+.mobile-menu__item-list ul {
+      font-size: 1.2rem;
+      padding-left: 35px;
+      list-style-type: none;
+        // background-color: #aaffff;
+    }
+
+.mobile-menu--hidden {
+    display: none;
+	}

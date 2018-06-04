@@ -48,7 +48,7 @@
         }
     }
 
-    nav {
+    .primary-nav {
         display: none;
 
         @mixin atMedium {
