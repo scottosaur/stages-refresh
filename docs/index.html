@@ -21,7 +21,7 @@
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="http://mstile-144x144.png" />
 
-  <link rel="stylesheet" href="assets/styles/styles-dc349a8620.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-8660abda1e.css"/>
   <script src="assets/scripts/Vendor-3a5f6f770e.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
     crossorigin="anonymous"></script>
@@ -29,8 +29,10 @@
 
 <body>
   <header class="header">
-
-    <img class="header__logo" src="./assets/images/stages-logo-svg.svg">
+    <a class="header__logo" href="#">
+      <img src="./assets/images/stages-logo-svg.svg" alt="Stages Logo">
+    </a>
+    
 
     <!-- begin desktop navbar -->
     <nav class="primary-nav">
@@ -95,14 +97,10 @@
       </ul>
     </nav>
 
-    <button class="header__menu-button btn">
-      <i class="fas fa-bars"></i>
+    <button class="header__menu-button btn btn--outline">
+      <i class="btn__icon-close fas fa-times"></i>
+      <i class="btn__icon-open fas fa-bars"></i>
     </button>
-
-    <!-- <div class="">
-        <a href="#" class="">Contact Us</a>
-      </div>
-    </div> -->
 
   </header>
 
@@ -332,7 +330,7 @@
   <footer class="footer">
     <span>&copy; 2018 Stages Chicago</span>
   </footer>
-  <script src="assets/scripts/App-faeb2bb76b.js"></script>
+  <script src="assets/scripts/App-6efa91e356.js"></script>
 </body>
 
 </html>

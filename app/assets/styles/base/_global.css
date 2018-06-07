@@ -5,6 +5,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
+    position: relative;
+    // overflow: hidden;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 img {

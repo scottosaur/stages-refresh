@@ -490,6 +490,14 @@ template {
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
+    position: relative;
+    // overflow: hidden;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -552,10 +560,13 @@ svg {
   border: 0;
   border-radius: .3rem;
   text-shadow: none;
+  position: relative;
+  text-align: center;
 
   -webkit-transition: all .2s ease-in;
 
   transition: all .2s ease-in;
+
 }
 
 .btn--centered {
@@ -586,6 +597,29 @@ svg {
     visibility: hidden;
   }
 
+.btn--opened .btn__icon-open {
+      opacity: 0;
+    }
+
+.btn--opened .btn__icon-close {
+      opacity: 1;
+    }
+
+.btn__icon-open {
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+    opacity: 1;
+  }
+
+.btn__icon-close {
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+    position: absolute;
+    left: 13px;
+    top: 9px;
+    opacity: 0;
+  }
+
 .btn:hover, .btn:active, .btn:focus {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -599,7 +633,7 @@ svg {
 
 .header {
 
-    position: static;
+    position: relative;
     height: 110px;
     overflow: visible;
     display: -webkit-box;
@@ -611,6 +645,8 @@ svg {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 20;
+    background-color: #fff;
 
 }
 
@@ -641,9 +677,15 @@ svg {
     }
 
 .header__logo {
+        display: block;
         height: 100%;
-        padding: 15px 15px 10px 0px;
+        padding: 15px 15px 10px 15px;
     }
+
+.header__logo img{
+            max-width: 100%;
+            max-height: 100%;
+        }
 
 @media (min-width: 800px) {
 
@@ -656,7 +698,7 @@ svg {
 .header__menu-button {
         font-size: 2rem;
         visibility: visible;
-        margin-right: 25px;
+        margin-right: 15px;
 
     }
 
@@ -1207,14 +1249,28 @@ svg {
 
 .mobile-menu {
   width: 100%;
-  background-color: #eee;
+  background-color: rgba(51,51,51, 0.5);
   display: block;
   margin: 0;
-  border-top: 2px solid #00acff;
-  border-bottom: 2px solid #00acff;
+  border-top: 109px solid transparent;
   text-align: center;
-  // position: relative;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  -webkit-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
 }
+
+.mobile-menu:before {
+    content: " ";
+    position: absolute;
+    z-index: 25;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-top: 4px solid #00acff;
+  }
 
 .mobile-menu button {
     margin-bottom: 15px;
@@ -1226,18 +1282,19 @@ svg {
 
 .mobile-menu__item-list {
     font-family: "Roboto Slab", serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     background-color: #ffffff;
     text-align: left;
-    width: auto;
+    width: 80%;
     display: inline-block;
     text-decoration: none;
     padding: 15px 35px 0px 35px;
     margin-top: 1px;
     margin-bottom: 0px;
     list-style-type: none;
+    border-bottom: 4px solid #00acff;
   }
 
 .mobile-menu__item-list ul {
@@ -1246,9 +1303,14 @@ svg {
       list-style-type: none;
       font-family: "Roboto", sans-serif;
       font-weight: normal;
-        // background-color: #aaffff;
+      // background-color: #aaffff;
+    }
+
+.mobile-menu__item-list li {
+      cursor: pointer;
     }
 
 .mobile-menu--hidden {
-    display: none;
-	}
+    opacity: 0;
+    z-index: -5;
+  }

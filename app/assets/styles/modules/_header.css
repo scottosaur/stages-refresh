@@ -1,11 +1,13 @@
 .header {
 
-    position: static;
+    position: relative;
     height: 110px;
     overflow: visible;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 20;
+    background-color: #fff;
 
     @mixin atMedium {
         align-items: flex-end;
@@ -25,8 +27,14 @@
     }
 
     &__logo {
+        display: block;
         height: 100%;
-        padding: 15px 15px 10px 0px;
+        padding: 15px 15px 10px 15px;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
 
         @mixin atMedium {
             padding: 15px 15px 10px 20px;
@@ -37,7 +45,7 @@
     &__menu-button {
         font-size: 2rem;
         visibility: visible;
-        margin-right: 25px;
+        margin-right: 15px;
 
         @mixin atMedium {
             display: none;

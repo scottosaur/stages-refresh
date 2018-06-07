@@ -10,12 +10,13 @@ class MobileMenu {
     events() {
         console.log(this.menuButton);
         this.menuButton.click(() => this.toggleTheMenu());
+        this.menuContent.click(() => this.toggleTheMenu());
     }
     
     toggleTheMenu() {
         console.log('Menu Toggle Click');
         this.menuContent.toggleClass("mobile-menu--hidden");
-        this.menuButton.toggleClass('header__menu-button--opened');
+        this.menuButton.toggleClass('btn--opened');
     }
 }
 

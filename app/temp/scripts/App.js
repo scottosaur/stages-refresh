@@ -10504,13 +10504,16 @@ var MobileMenu = function () {
             this.menuButton.click(function () {
                 return _this.toggleTheMenu();
             });
+            this.menuContent.click(function () {
+                return _this.toggleTheMenu();
+            });
         }
     }, {
         key: "toggleTheMenu",
         value: function toggleTheMenu() {
             console.log('Menu Toggle Click');
             this.menuContent.toggleClass("mobile-menu--hidden");
-            this.menuButton.toggleClass('header__menu-button--opened');
+            this.menuButton.toggleClass('btn--opened');
         }
     }]);
 
