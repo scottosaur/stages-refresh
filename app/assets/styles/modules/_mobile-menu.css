@@ -9,7 +9,7 @@
   top: 0;
   z-index: 10;
   height: 100%;
-  transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in, z-index 1ms linear;  
 
   &:before {
     content: " ";
@@ -60,6 +60,7 @@
   }
 
   &--hidden {
+    transition: opacity .2s ease-in, z-index 1ms linear .2s;
     opacity: 0;
     z-index: -5;
   }

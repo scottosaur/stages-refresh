@@ -1258,8 +1258,8 @@ svg {
   top: 0;
   z-index: 10;
   height: 100%;
-  -webkit-transition: opacity .2s ease-in;
-  transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in, z-index 1ms linear;
+  transition: opacity .2s ease-in, z-index 1ms linear;
 }
 
 .mobile-menu:before {
@@ -1311,6 +1311,8 @@ svg {
     }
 
 .mobile-menu--hidden {
+    -webkit-transition: opacity .2s ease-in, z-index 1ms linear .2s;
+    transition: opacity .2s ease-in, z-index 1ms linear .2s;
     opacity: 0;
     z-index: -5;
   }
