@@ -10510,6 +10510,7 @@ var MobileMenu = function () {
         value: function toggleTheMenu() {
             console.log('Menu Toggle Click');
             this.menuContent.toggleClass("mobile-menu--hidden");
+            this.menuButton.toggleClass('header__menu-button--opened');
         }
     }]);
 
