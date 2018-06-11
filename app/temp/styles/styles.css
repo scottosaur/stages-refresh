@@ -1119,9 +1119,8 @@ svg {
             align-items: center;
     margin: 35px auto 35px auto;
     max-width: 100%;
-
+    overflow: hidden;
     -webkit-transition: all .2s ease-out;
-
     transition: all .2s ease-out;
 
 }
@@ -1182,6 +1181,7 @@ svg {
 .card__title {
         text-align: center;
         font-family: 'Roboto Slab', serif;
+        margin-bottom: 5px;
     }
 
 .card__content {

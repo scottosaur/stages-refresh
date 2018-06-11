@@ -6,7 +6,7 @@
     align-items: center;
     margin: 35px auto 35px auto;
     max-width: 100%;
-
+    overflow: hidden;
     transition: all .2s ease-out;
     
     @mixin atMedium {
@@ -47,6 +47,7 @@
     &__title {
         text-align: center;
         font-family: 'Roboto Slab', serif;
+        margin-bottom: 5px;
     }
 
     &__content {
