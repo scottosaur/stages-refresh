@@ -741,7 +741,11 @@ svg {
     color: #00acff;
     border-top: solid 2px #00acff;
     background-color: white;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.2s linear;
+    transition: visibility 0s, opacity 0.2s linear;
+
     position: absolute;
     text-decoration: none;
     padding: 10px 25px 25px 25px;
@@ -770,7 +774,7 @@ svg {
   }
 
 .primary-nav__drop-link {
-    z-index: 1;
+    z-index: 6;
   }
 
 .primary-nav__drop-link:hover a {
@@ -786,7 +790,9 @@ svg {
   }
 
 .primary-nav__drop-link:hover > ul {
-    display: inherit;
+    // display: inherit;
+    visibility: visible;
+    opacity: 1;
   }
 
 .primary-nav__drop-link ul li a:hover {
@@ -798,10 +804,9 @@ svg {
   }
 
 .primary-nav__active {
-    -webkit-transform-origin: bottom center;
-            transform-origin: bottom center;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    // transform-origin: bottom center;
+    // transform: scale(1.1);
+    position: absolute;
   }
 
 .primary-nav__active a {
@@ -820,7 +825,14 @@ svg {
 @media (min-width: 800px) {
 
 .wrapper {
-        max-width: 70%
+        max-width: 80%
+}
+    }
+
+@media (min-width: 1010px) {
+
+.wrapper {
+        max-width: 75%
 }
     }
 
@@ -1095,6 +1107,8 @@ svg {
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
         padding: 10px 0 10px 0;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
 @media (min-width: 800px) {
@@ -1202,6 +1216,7 @@ svg {
             -ms-flex-align: center;
                 align-items: center;
         margin: auto;
+        // max-width: 300px;
         padding: 10px 25px 25px 25px;
     }
 
