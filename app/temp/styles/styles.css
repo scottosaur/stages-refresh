@@ -450,6 +450,10 @@ template {
   display: none;
 }
 
+// $mainAccent: #FF8900;
+
+// $mainAccent: #33cccd;
+
 // .color-primary-0 { color: #00ACFF }
 
 /* Main Primary color */
@@ -522,7 +526,7 @@ svg {
     background-position: center top;
     text-align: center;
     border-bottom: solid #00acff 10px;
-    padding-top: 155px;
+    padding: 0;
     
     height: 385px;
 }
@@ -541,8 +545,7 @@ svg {
 
         height: 625px;
         padding-top: 365px;
-        padding-bottom: 80px;
-        margin-top: 140px
+        padding-bottom: 80px
 }
 
         .large-hero__headline {
@@ -554,9 +557,9 @@ svg {
 .btn {
   outline: 0;
   color: #ffffff;
-  padding: 7px 10px 7px 10px;
+  padding: 9px 12px 9px 12px;
   font-size: 1.2rem;
-  background-color: #FF8900;
+  background-color: #fd6565;
   border: 0;
   border-radius: .3rem;
   text-shadow: none;
@@ -577,7 +580,7 @@ svg {
     display: inline-block;
     background-color: transparent;
     font-weight: bold;
-    color: #FF8900;
+    color: #fd6565;
   }
 
 .btn--form {
@@ -778,11 +781,11 @@ svg {
   }
 
 .primary-nav__drop-link:hover a {
-      color: #FF8900;
+      color: #fd6565;
     }
 
 .primary-nav__drop-link:hover svg {
-      color: #FF8900;
+      color: #fd6565;
     }
 
 .primary-nav__drop-link:hover ul li a {
@@ -796,7 +799,7 @@ svg {
   }
 
 .primary-nav__drop-link ul li a:hover {
-    color: #FF8900;
+    color: #fd6565;
   }
 
 .primary-nav svg {
@@ -810,11 +813,11 @@ svg {
   }
 
 .primary-nav__active a {
-      color: #FF8900;
+      color: #fd6565;
     }
 
 .primary-nav__active svg {
-      color: #FF8900;
+      color: #fd6565;
     }
 
 .wrapper {
@@ -1234,14 +1237,15 @@ svg {
 }
 
 .container--blue{
-        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
         // background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
         // background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
         // background-image: url("https://www.transparenttextures.com/patterns/simple-horizontal-light.png");
         // background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
         // background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-        background-color: #00acff;
-        // height: 700px;
+        // background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+        // background-color: #00acff;
+        background-color: #33cccd;
     }
 
 .footer {
@@ -1331,3 +1335,14 @@ svg {
     opacity: 0;
     z-index: -5;
   }
+
+.main-content-area {
+    margin-top: 155px;
+}
+
+@media (min-width: 800px) {
+
+.main-content-area {
+        margin-top: 145px
+}
+    }

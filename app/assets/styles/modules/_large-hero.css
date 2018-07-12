@@ -6,7 +6,7 @@
     background-position: center top;
     text-align: center;
     border-bottom: solid $mainBlue 10px;
-    padding-top: 155px;
+    padding: 0;
     
     height: 385px;
 
@@ -23,7 +23,6 @@
         height: 625px;
         padding-top: 365px;
         padding-bottom: 80px;
-        margin-top: 140px;
 
         &__headline {
             margin-bottom: 30px;
