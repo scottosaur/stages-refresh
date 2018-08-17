@@ -50,6 +50,10 @@
 
   &__drop-link {
     z-index: 6;
+  
+    &--current{
+      font-weight: 600;
+    }
   }
 
   &__drop-link:hover {

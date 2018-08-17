@@ -1,69 +1,131 @@
 .card {
-    padding: 0;
-    display: flex;
-    background-color: rgba(255, 255, 255, .6);
-    flex-direction: column;
-    align-items: center;
-    margin: 35px auto 35px auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.6);
+  flex-direction: column;
+  align-items: center;
+  margin: 35px auto 35px auto;
+  max-width: 100%;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+
+  @mixin atMedium {
+    flex-direction: row;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &__image {
+    order: -1;
     max-width: 100%;
-    overflow: hidden;
-    transition: all .2s ease-out;
-    
+    // min-height: 335px;
+    position: relative;
+    align-self: stretch;
+    // overflow: hidden;
+    // background-color: orange;
+
     @mixin atMedium {
-        flex-direction: row;
+      min-width: 335px;
+      mi-height: 335px;
+      order: 0;
     }
 
+    img {
+      min-width: 100%;
+      min-height: 100%;
 
-    &:hover{
-        background-color: rgba(255, 255, 255, 1);
+      @mixin atMedium {
+        position: absolute;
+        object-fit: cover;
+      }
     }
+  }
 
-    &__image {
-        order: -1;
-        max-width: 100%;
-        // min-height: 335px;
-        position: relative;
-        align-self: stretch;
-        // overflow: hidden;
-        // background-color: orange;
-        
+  &__title {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 5px;
+    &--light {
+      font-weight: 400;
+    }
+  }
+
+  &__content {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    // max-width: 300px;
+    padding: 10px 25px 25px 25px;
+
+    @mixin atMedium {
+      margin: 15px 80px 15px 80px;
+      padding: 10px 25px 20px 25px;
+    }
+    &--wide{
         @mixin atMedium {
-            min-width: 335px;
-            mi-height: 335px;
-            order: 0;
-        }
-
-        img{
-            min-width: 100%;
-            min-height: 100%;
-
-            @mixin atMedium {
-                position: absolute;
-                object-fit: cover;
-            }
+            margin: 15px 30px 15px 30px;
         }
     }
+  }
 
-    &__title {
-        text-align: center;
-        font-family: 'Roboto Slab', serif;
-        margin-bottom: 5px;
+  &--narrow {
+    max-width: 80%;
+    overflow: visible;
+    @mixin atMedium {
+      max-width: 60%;
     }
+  }
 
-    &__content {
-        flex: 1.8;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        // max-width: 300px;
-        padding: 10px 25px 25px 25px;
+  &--pair {
+      @mixin atMedium{
+        max-width: 40%;
+      }
+  }
 
-        @mixin atMedium {
-            margin: 15px 80px 15px 80px;
-            padding: 10px 25px 20px 25px;
-        }
+  &--purple {
+    background-color: rgba(153, 102, 204, 0.8);
+    color: #fff;
+
+    &:hover {
+      background-color: rgba(153, 102, 204, 1);
     }
+  }
 
+  &--teal {
+    background-color: rgba($boxTeal, .8);
+    color: #fff;
+
+    &:hover {
+      background-color: rgba($boxTeal, 1);
+    }
+  }
+
+  &__icon {
+    color: black;
+    position: absolute;
+    font-size: 8em;
+    padding: 0;
+    height: 6rem;
+    width: 6rem;
+    background-color: white;
+    
+    padding-top: 10px;
+    padding-left: 23px;
+
+    border-radius: 50%;
+    top: 30%;
+
+    &--left {
+      left: -3rem;
+    }
+    &--right {
+      right: -3rem;
+    }
+  }
 }

@@ -35,9 +35,16 @@
 
   &--outline {
     background: transparent;
-    border: solid 3px $mainBlue;
-    color: $mainBlue;
-    visibility: hidden;
+    font-weight: bold;
+    border: solid 2px $mainAccent;;
+    color: $mainAccent;
+  }
+
+  &&--outline-white {
+    background: transparent;
+    font-weight: bold;
+    border: solid 2px $mainWhite;
+    color: $mainWhite;
   }
 
   &--opened {

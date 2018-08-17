@@ -16,6 +16,10 @@
         margin-bottom: 30px;
         font-size: 2.5rem;
         font-weight: 400;
+    
+        &--small {
+            font-size: 1.5rem; 
+        }
     }
 
     @mixin atMedium {
@@ -27,6 +31,14 @@
         &__headline {
             margin-bottom: 30px;
             font-size: 4em;
+
+            &--small {
+                font-size: 2rem; 
+            }
         }
+    }
+
+    &--classes-infant-toddler {
+        background-image: url('../../assets/images/classes-infant-toddler-hero.jpg');
     }
 }
