@@ -1,5 +1,4 @@
 .main-content-area {
-    margin-top: 155px;
 
     @mixin atMedium {
         margin-top: 145px;

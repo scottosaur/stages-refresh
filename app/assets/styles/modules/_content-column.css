@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  order: 1;
 
   &__title {
     font-family: "Roboto Slab", serif;
@@ -81,4 +82,13 @@
   @mixin atMedium {
     width: 33%;
   }
+
+  &--feed {
+    order: 2;
+
+    @mixin atMedium {
+      order: 1;
+    }
+  }
+
 }

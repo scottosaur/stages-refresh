@@ -537,9 +537,13 @@ svg {
         margin-bottom: 30px;
         font-size: 2.5rem;
         font-weight: 400;
+        margin-top: 0;
+
+        padding-top: 190px;
     }
 
 .large-hero__headline--small {
+            padding-top: 0;
             font-size: 1.5rem; 
         }
 
@@ -548,7 +552,7 @@ svg {
 .large-hero {
 
         height: 625px;
-        padding-top: 365px;
+        padding-top: 225px;
         padding-bottom: 80px
 }
 
@@ -1056,6 +1060,10 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+
 }
 
 .content-column__title {
@@ -1162,8 +1170,37 @@ svg {
 
 .content-column {
     width: 33%
+
 }
     }
+
+.content-column--feed {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+@media (min-width: 800px) {
+
+.content-column--feed {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1
+  }
+    }
+
+.row {
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
 
 @media (min-width: 800px) {
 
@@ -1491,10 +1528,6 @@ svg {
     opacity: 0;
     z-index: -5;
   }
-
-.main-content-area {
-    margin-top: 155px;
-}
 
 @media (min-width: 800px) {
 
