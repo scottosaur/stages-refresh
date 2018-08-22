@@ -74,6 +74,11 @@
     }
   }
 
+  &__embed {
+    height: 350px;
+    width: 100%;
+  }
+
   &--narrow {
     max-width: 80%;
     overflow: visible;
@@ -87,6 +92,13 @@
         // flex: 1;
         max-width: 40%;
       }
+  }
+
+  &--flex {
+    @mixin atMedium{
+      flex: 1;
+      max-width: 45%;
+    }
   }
 
   &--purple {

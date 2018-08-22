@@ -1394,6 +1394,11 @@ svg {
     }
     }
 
+.card__embed {
+    height: 350px;
+    width: 100%;
+  }
+
 .card--narrow {
     max-width: 80%;
     overflow: visible;
@@ -1411,6 +1416,16 @@ svg {
 .card--pair {
         // flex: 1;
         max-width: 40%
+  }
+    }
+
+@media (min-width: 800px) {
+
+.card--flex {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      max-width: 45%
   }
     }
 
@@ -1457,8 +1472,8 @@ svg {
     }
 
 .container {
-
-    padding: 1px;
+    
+    padding-top: 1px;
 }
 
 .container--blue{
