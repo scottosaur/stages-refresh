@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="http://mstile-144x144.png" />
 
-    <link rel="stylesheet" href="assets/styles/styles-0e9ea744a7.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-1e5884f3ce.css"/>
     <script src="assets/scripts/Vendor-3a5f6f770e.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
         crossorigin="anonymous"></script>
@@ -170,6 +170,8 @@
         </ul>
     </nav>
 
+    <!-- Begin Main Area -->
+
     <main class="main-content-area">
         <div class="large-hero">
             <h1 class="large-hero__headline">Join Us for a Free Trial Class</h1>
@@ -181,37 +183,42 @@
         </div>
 
         <section id="classes" class="page-section" data-matching-link="#classes-link">
-            <h1 class="wrapper headline">
+            <h1 class="wrapper headline headline--extra-margin">
                 <strong>Stages</strong> is a Chicago-based Performing Arts Company offering one-of-a-kind classes and birthday party
                 entertainment for children ages 2 months to 12 years.</h1>
 
             <div class="wrapper offerings">
                 <div class="box box--teal">
-                    <img class="box__photo" src="./assets/images/home-cutout-1.jpg">
-                    <img class="box__breakout-image" src="./assets/images/stages-infant.svg">
-                    <h1 class="box__title">NB to 18 Months</h1>
-                    <p class="box__text">Classes designed specifically for our newborns, walkers and early crawlers!</p>
+                    <a href="classes-infant-toddler.html" title="Infant & Toddler Classes">
+                        <img class="box__photo" src="./assets/images/home-cutout-1.jpg">
+                        <img class="box__breakout-image" src="./assets/images/stages-infant.svg">
+                        <h1 class="box__title">NB to 18 Months</h1>
+                        <p class="box__text">Classes designed specifically for our newborns, walkers and early crawlers!</p>
+                    </a>
                 </div>
                 <div class="box box--red">
-                    <img class="box__photo" src="./assets/images/home-cutout-2.jpg" alt="Toddler Admiring Bubbles">
-                    <img class="box__breakout-image" src="./assets/images/stages-toddler.svg">
-                    <h1 class="box__title">18 Months to 3 Years</h1>
-                    <p class="box__text">The ultimate preschool prep experience for your little one!</p>
-
+                    <a href="classes-preschool-prep.html" title="Preschool Prep Classes">
+                        <img class="box__photo" src="./assets/images/home-cutout-2.jpg" alt="Toddler Admiring Bubbles">
+                        <img class="box__breakout-image" src="./assets/images/stages-toddler.svg">
+                        <h1 class="box__title">18 Months to 3 Years</h1>
+                        <p class="box__text">The ultimate preschool prep experience for your little one!</p>
+                    </a>
                 </div>
                 <div class="box box--purple">
-                    <img class="box__photo" src="./assets/images/home-cutout-3.jpg" alt="Child Playing as an Animal">
-                    <img class="box__breakout-image" src="./assets/images/stages-preschool.svg">
-                    <h1 class="box__title">3 Years to 5 Years</h1>
-                    <p class="box__text">Introduce your preschooler to the magic of musical theater!</p>
-
+                    <a href="classes-preschool.html" title="Preschool Classes">
+                        <img class="box__photo" src="./assets/images/home-cutout-3.jpg" alt="Child Playing as an Animal">
+                        <img class="box__breakout-image" src="./assets/images/stages-preschool.svg">
+                        <h1 class="box__title">3 Years to 5 Years</h1>
+                        <p class="box__text">Introduce your preschooler to the magic of musical theater!</p>
+                    </a>
                 </div>
                 <div class="box box--green">
-                    <img class="box__photo" src="./assets/images/home-cutout-4.jpg">
-                    <img class="box__breakout-image" src="./assets/images/stages-elementary.svg">
-                    <h1 class="box__title">K to 6th Grade</h1>
-                    <p class="box__text">Help your Broadway Star develop the skills every performer needs!</p>
-
+                    <a href="classes-grade-school.html" title="Grade School Classes">
+                        <img class="box__photo" src="./assets/images/home-cutout-4.jpg">
+                        <img class="box__breakout-image" src="./assets/images/stages-elementary.svg">
+                        <h1 class="box__title">K to 6th Grade</h1>
+                        <p class="box__text">Help your Broadway Star develop the skills every performer needs!</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -300,31 +307,24 @@
 
     <section id="contact" class="row page-section" data-matching-link="#contact-link">
         <div class="content-column">
-            <form>
-                <h1 class="content-column__title">Contact Us</h1>
-                <input class="content-column__input" type="text" name="name" placeholder="Your Name">
-                <input class="content-column__input" type="text" name="email" placeholder="Your Email Address">
-                <textarea class="content-column__input" name="message" placeholder="Your Message"></textarea>
-                <button class="btn btn--form">Submit</button>
-            </form>
+            <h1 class="content-column__title">Contact Us</h1>
+                <div class="content-column__links">
+                    
+                    <a href="#" target=blank class="content-column__link">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@stageschicago.com</span>
+                    </a>
+                
+                    <a href="#" target=blank class="content-column__link">
+                        <i class="fas fa-phone"></i>
+                        <span>(630)555-5555</span>
+                    </a>
+                </div>
+            
+
         </div>
 
-        <div class="content-column">
-            <h1 class="content-column__title">Follow Us</h1>
-            <div class="content-column__icons">
-                <a href="https://www.facebook.com/stageschicago/" target=blank>
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/stageschi/" target=blank>
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/stageschi" target=blank>
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="content-column">
+        <div class="content-column content-column--feed">
             <h1 class="content-column__title">Recent</h1>
             <div class="content-column__inner-scroll">
                 <div id="pixlee_container"></div>
@@ -342,6 +342,24 @@
             </div>
             <script async defer src="//www.instagram.com/embed.js"></script>
         </div>
+
+        <div class="content-column">
+            <h1 class="content-column__title">Follow Us</h1>
+            <div class="content-column__content">
+                <div class="content-column__icons">
+                    <a href="https://www.facebook.com/stageschicago/" target=blank>
+                        <i class="fab fa-facebook content-column__icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stageschi/" target=blank>
+                        <i class="fab fa-instagram content-column__icon"></i>
+                    </a>
+                    <a href="https://twitter.com/stageschi" target=blank>
+                        <i class="fab fa-twitter content-column__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="footer">
