@@ -45,4 +45,16 @@
     &--classes-infant-toddler {
         background-image: url('../../assets/images/classes-infant-toddler-hero.jpg');
     }
+
+    &--classes-preschool-prep {
+        background-image: url('../../assets/images/classes-preschool-prep-hero.jpg');
+    }
+
+    &--classes-preschool {
+        background-image: url('../../assets/images/classes-preschool-hero.jpg');
+    }
+
+    &--classes-grade-school {
+        background-image: url('../../assets/images/classes-grade-school-hero.jpg');
+    }
 }

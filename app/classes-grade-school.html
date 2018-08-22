@@ -41,7 +41,7 @@
     <!-- begin desktop navbar -->
     <nav class="primary-nav">
       <ul>
-        <li id="classes-link" class="primary-nav__drop-link">
+        <li id="classes-link" class="primary-nav__drop-link primary-nav__drop-link--current">
           <a href="#classes" title="Classes">Classes</a>
           <i class="fas fa-angle-down"></i>
           <ul class="primary-nav__drop-menu">
@@ -172,6 +172,140 @@
   <!-- Begin Main Page Content -->
 
   <main class="main-content-area">
+    <div class="large-hero large-hero--classes-grade-school">
+      <h1 class="large-hero__headline">Grade School Classes</h1>
+      <h2 class="large-hero__headline large-hero__headline--small">Grades K through 6</h2>
+    </div>
+
+    <!-- Begin Class Cards Section -->
+
+    <section id="body-area" class="container container--blue">
+      <div class="wrapper">
+
+        <div id="class1" class="card page-section" data-matching-link="#card1-link">
+          <div class="card__image">
+            <img src="./assets/images/classes-grade-school-card-1.jpg">
+          </div>
+          <div class="card__content">
+            <h1 class="card__title">Broadway Stars
+              <br>(Grades 2-6)</h1>
+            <p>
+              Perfect for all skill levels, this 90 minute class helps young performers develop the foundational skills and technique every Broadway Star needs!
+              <br>
+              <br>Taught by two NYU Musical Theater alumna with years of experience both in the classroom and on professional stages, students are given the opportunity to learn from the best as they receive individualized attention and feedback. Each week, young performers will participate in acting games used at every level of training to foster imagination and improvisational skills while working together as a “cast” to learn and rehearse musical numbers from Broadway shows. But the BEST part? Each semester culminates with an onstage performance at a professional theater in our “Stages Finale!”
+              <br>
+              <br>Stages’ curriculum is designed to grow with your child, becoming more challenging as children get older and more advanced and is customized to cater to each unique cast of young performers! Whether your child is destined for the lights of Broadway or simply loves to perform, this class will challenge them to become better collaborators and improvisers, spark their creativity, and give them the confidence to excel both onstage and off.
+            </p>
+          </div>
+        </div>
+
+        <div id="class2" class="card page-section" data-matching-link="#class2-link">
+          <div class="card__content">
+            <h1 class="card__title">Broadway Weekend Workshops
+              <br>(Grades K-6)</h1>
+            <p>
+                More Information Coming Soon!
+            </p>
+          </div>
+          <div class="card__image">
+            <img src="./assets/images/classes-grade-school-card-2.jpg">
+          </div>
+        </div>
+
+
+    </section>
+
+    <section id="locations">
+      <div class="wrapper">
+        <h1 class="headline">
+          Select a Location for Class Schedule and Registration Information
+          <div class="row row--small">
+            <a href="#">
+              <button class="btn btn--outline">West Loop</button>
+            </a>
+            <a href="#">
+              <button class="btn btn--outline">Lincoln Park</button>
+            </a>
+            <a href="#">
+              <button class="btn btn--outline">River North</button>
+            </a>
+            <a href="#">
+              <button class="btn btn--outline">Highland Park</button>
+            </a>
+          </div>
+        </h1>
+      </div>
+    </section>
+
+    <section id="call-to-action">
+      <div class="wrapper">
+        <div class="row">
+          <div id="new-to-stages" class="card card--pair card--teal">
+            <div class="card__content--wide">
+              <h1 class="card__title">New to Stages?</h1>
+              <p>
+                Join us for a Free Trial Class! Stages is happy to offer free trials for new families in all of our class.
+                <br>
+                <br>Click the link below to book your preferred day, time, and location.
+              </p>
+              <div class="row">
+                <a href="#">
+                  <button class="btn btn--outline-white">Free Trial Class</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="need-help-deciding" class="card card--pair card--teal">
+            <div class="card__content--wide">
+              <h1 class="card__title">Need Help Deciding?</h1>
+              <p>
+                Let Stages help you choose! We are here to help you figure out which class is the best fit your child.
+                <br>
+                <br>Contact us if you have any questions or want to learn more about our program!
+              </p>
+              <div class="row">
+                <a href="#contact">
+                  <button class="btn btn--outline-white">Contact Stages</button>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="body-area" class="container container--blue">
+      <div class="wrapper">
+
+        <div id="quote-box" class="card card--narrow page-section" data-matching-link="#quote-box-link">
+          <div class="card__icon card__icon--left">
+            <span>
+              &ldquo;
+            </span>
+          </div>
+          <div class="card__icon card__icon--right">
+            <span>
+              &rdquo;
+            </span>
+          </div>
+          <div class="card__content">
+            <p>
+              Broadway and Me is by far one of the best music classes, if not THE best that I have ever been to. Emily is incredibly gifted
+              and makes every class feel like a mini Broadway performance. As a Broadway enthusiast, it makes me so happy
+              to have found a class that exposes kids of all ages to the best of the best Broadway hits.
+              <br>
+              <br>Emily structures each class in a developmentally appropriate way that allows children to thrive and feel comfortable
+              within the class. Her voice is incredible and her enthusiasm rubs off on anyone who enters the door. I’m not
+              sure who enjoys going to stages more, the kids or myself! Go to this class!
+            </p>
+            <h2 class="card__title card__title--light">
+              Kelsey B.
+              <br>Broadway & Me Parent
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -179,31 +313,24 @@
 
   <section id="contact" class="row page-section" data-matching-link="#contact-link">
     <div class="content-column">
-      <form>
-        <h1 class="content-column__title">Contact Us</h1>
-        <input class="content-column__input" type="text" name="name" placeholder="Your Name">
-        <input class="content-column__input" type="text" name="email" placeholder="Your Email Address">
-        <textarea class="content-column__input" name="message" placeholder="Your Message"></textarea>
-        <button class="btn btn--form">Submit</button>
-      </form>
-    </div>
+      <h1 class="content-column__title">Contact Us</h1>
+      <div class="content-column__links">
 
-    <div class="content-column">
-      <h1 class="content-column__title">Follow Us</h1>
-      <div class="content-column__icons">
-        <a href="https://www.facebook.com/stageschicago/" target=blank>
-          <i class="fab fa-facebook"></i>
+        <a href="mailto://info@stageschicago.com" target=blank class="content-column__link">
+          <i class="fas fa-envelope"></i>
+          <span>info@stageschicago.com</span>
         </a>
-        <a href="https://www.instagram.com/stageschi/" target=blank>
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/stageschi" target=blank>
-          <i class="fab fa-twitter"></i>
+
+        <a href="#" target=blank class="content-column__link">
+          <i class="fas fa-phone"></i>
+          <span>(630)555-5555</span>
         </a>
       </div>
+
+
     </div>
 
-    <div class="content-column">
+    <div class="content-column content-column--feed">
       <h1 class="content-column__title">Recent</h1>
       <div class="content-column__inner-scroll">
         <div id="pixlee_container"></div>
@@ -221,6 +348,24 @@
       </div>
       <script async defer src="//www.instagram.com/embed.js"></script>
     </div>
+
+    <div class="content-column">
+      <h1 class="content-column__title">Follow Us</h1>
+      <div class="content-column__content">
+        <div class="content-column__icons">
+          <a href="https://www.facebook.com/stageschicago/" target=blank>
+            <i class="fab fa-facebook content-column__icon"></i>
+          </a>
+          <a href="https://www.instagram.com/stageschi/" target=blank>
+            <i class="fab fa-instagram content-column__icon"></i>
+          </a>
+          <a href="https://twitter.com/stageschi" target=blank>
+            <i class="fab fa-twitter content-column__icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <footer class="footer">
