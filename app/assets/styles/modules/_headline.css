@@ -15,8 +15,15 @@
     }
 
     @mixin atMedium {
-        margin-bottom: 58px;
+        margin-bottom: 0;
         font-size: 2rem;
         line-height: 2.6rem;
     }
+
+    &--extra-margin {
+        @mixin atMedium {
+            margin-bottom: 58px;
+        }
+    }
+
 }

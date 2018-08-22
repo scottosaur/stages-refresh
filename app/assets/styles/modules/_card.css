@@ -84,6 +84,7 @@
 
   &--pair {
       @mixin atMedium{
+        // flex: 1;
         max-width: 40%;
       }
   }

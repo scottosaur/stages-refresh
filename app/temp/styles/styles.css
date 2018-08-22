@@ -887,6 +887,7 @@ svg {
     line-height: 2.2rem;
 
     margin: 2.5rem auto 1.5rem auto;
+
 }
 
 .headline strong {
@@ -898,10 +899,18 @@ svg {
 @media (min-width: 800px) {
 
 .headline{
-        margin-bottom: 58px;
+        margin-bottom: 0;
         font-size: 2rem;
         line-height: 2.6rem
+
 }
+    }
+
+@media (min-width: 800px) {
+
+.headline--extra-margin {
+            margin-bottom: 58px
+    }
     }
 
 .box {
@@ -1255,6 +1264,16 @@ svg {
     }
     }
 
+@media (min-width: 800px) {
+
+.row--spread {
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            padding: 1em 0 1em 0
+    }
+    }
+
 .card {
   padding: 0;
   position: relative;
@@ -1390,6 +1409,7 @@ svg {
 @media (min-width: 800px) {
 
 .card--pair {
+        // flex: 1;
         max-width: 40%
   }
     }

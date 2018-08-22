@@ -22,4 +22,11 @@
             padding: 1rem;
         }
     }
+
+    &--spread {
+        @mixin atMedium {
+            justify-content: space-between;
+            padding: 1em 0 1em 0;
+        }
+    }
 }
