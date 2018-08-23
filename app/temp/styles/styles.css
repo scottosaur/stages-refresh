@@ -1474,6 +1474,7 @@ svg {
 .container {
     
     padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .container--blue{

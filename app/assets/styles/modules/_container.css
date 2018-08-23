@@ -1,6 +1,7 @@
 .container {
     
     padding-top: 1px;
+    padding-bottom: 1px;
 
     &--blue{
         // background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");

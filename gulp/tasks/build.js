@@ -52,6 +52,7 @@ gulp.task('useminTrigger', ['deleteDistFolder'], function() {
     gulp.start('usemin');
 })
 
+// usemin replaces css and js links in HTML
 gulp.task('usemin', ['styles', 'scripts'], function () {
     return gulp.src("./app/*.html")
         .pipe(usemin({
