@@ -582,6 +582,26 @@ svg {
         background-image: url('../../assets/images/classes-grade-school-hero.jpg');
     }
 
+.large-hero--locations-highland-park {
+        background-image: url('../../assets/images/locations-highland-park-hero.jpg');
+        background-position: center center;
+    }
+
+.large-hero--locations-lincoln-park {
+        background-image: url('../../assets/images/locations-lincoln-park-hero.jpg');
+        background-position: center center;
+    }
+
+.large-hero--locations-river-north {
+        background-image: url('../../assets/images/locations-river-north-hero.jpg');
+        background-position: center center;
+    }
+
+.large-hero--locations-west-loop {
+        background-image: url('../../assets/images/locations-west-loop-hero.jpg');
+        background-position: center center;
+    }
+
 .btn {
   outline: 0;
   color: #ffffff;
@@ -1395,7 +1415,8 @@ svg {
     }
 
 .card__embed {
-    height: 350px;
+    min-height: 350px;
+    height: 100%;
     width: 100%;
   }
 

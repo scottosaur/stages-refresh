@@ -74,7 +74,7 @@
                 <li id="parties-and-events-link">
                     <a href="parties-events.html" title="Parties & Events">Parties & Events</a>
                 </li>
-                <li id="locations-link" class="primary-nav__drop-link">
+                <li id="locations-link" class="primary-nav__drop-link primary-nav__drop-link--current">
                     <a href="#locations" title="Locations">Locations</a>
                     <i class="fas fa-angle-down"></i>
                     <ul class="primary-nav__drop-menu">
@@ -172,6 +172,47 @@
     <!-- Begin Main Page Content -->
 
     <main class="main-content-area">
+        <div class="large-hero large-hero--locations-river-north">
+            <h1 class="large-hero__headline">River North</h1>
+            <h2 class="large-hero__headline large-hero__headline--small">@ Cocoon Care</h2>
+        </div>
+
+        <!-- Begin Class Schedule Section -->
+
+        <section class="container">
+
+            <h1 class="wrapper headline">
+                River North Fall Schedule 2018
+            </h1>
+
+        </section>
+
+        <!-- Begin Map & Directions Section -->
+
+        <section id="map-directions" class="container">
+
+            <div class="wrapper">
+                <div class="row">
+
+                    <div class="card card--flex card--teal">
+                        <div class="card__content card__content--wide">
+                            <p>
+                                Classes take place at <strong>CocoonCare, 409 W Huron St. Chicago, IL 60654</strong>. A teacher will be in the lobby to greet you you
+                                beginning 5 minutes before class.
+                                <br>
+                                <br>Please use the call box when you arrive to ring CocoonCare and we will buzz you in.  A teacher will be in the lobby to greet you beginning 5 minutes before class. If you arrive after the class’s scheduled start time, please head toward the back of CocoonCare and follow the music to the studio where class is taking place.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card--flex card--teal">
+                        <div class="card__embed">
+                            <iframe src="https://snazzymaps.com/embed/93448" width="100%" height="100%" style="border:none;"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
 
     </main>
 
@@ -179,31 +220,24 @@
 
     <section id="contact" class="row page-section" data-matching-link="#contact-link">
         <div class="content-column">
-            <form>
-                <h1 class="content-column__title">Contact Us</h1>
-                <input class="content-column__input" type="text" name="name" placeholder="Your Name">
-                <input class="content-column__input" type="text" name="email" placeholder="Your Email Address">
-                <textarea class="content-column__input" name="message" placeholder="Your Message"></textarea>
-                <button class="btn btn--form">Submit</button>
-            </form>
-        </div>
+            <h1 class="content-column__title">Contact Us</h1>
+            <div class="content-column__links">
 
-        <div class="content-column">
-            <h1 class="content-column__title">Follow Us</h1>
-            <div class="content-column__icons">
-                <a href="https://www.facebook.com/stageschicago/" target=blank>
-                    <i class="fab fa-facebook"></i>
+                <a href="#" target=blank class="content-column__link">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@stageschicago.com</span>
                 </a>
-                <a href="https://www.instagram.com/stageschi/" target=blank>
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/stageschi" target=blank>
-                    <i class="fab fa-twitter"></i>
+
+                <a href="#" target=blank class="content-column__link">
+                    <i class="fas fa-phone"></i>
+                    <span>(630)555-5555</span>
                 </a>
             </div>
+
+
         </div>
 
-        <div class="content-column">
+        <div class="content-column content-column--feed">
             <h1 class="content-column__title">Recent</h1>
             <div class="content-column__inner-scroll">
                 <div id="pixlee_container"></div>
@@ -221,6 +255,24 @@
             </div>
             <script async defer src="//www.instagram.com/embed.js"></script>
         </div>
+
+        <div class="content-column">
+            <h1 class="content-column__title">Follow Us</h1>
+            <div class="content-column__content">
+                <div class="content-column__icons">
+                    <a href="https://www.facebook.com/stageschicago/" target=blank>
+                        <i class="fab fa-facebook content-column__icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stageschi/" target=blank>
+                        <i class="fab fa-instagram content-column__icon"></i>
+                    </a>
+                    <a href="https://twitter.com/stageschi" target=blank>
+                        <i class="fab fa-twitter content-column__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="footer">

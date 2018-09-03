@@ -57,4 +57,24 @@
     &--classes-grade-school {
         background-image: url('../../assets/images/classes-grade-school-hero.jpg');
     }
+
+    &--locations-highland-park {
+        background-image: url('../../assets/images/locations-highland-park-hero.jpg');
+        background-position: center center;
+    }
+
+    &--locations-lincoln-park {
+        background-image: url('../../assets/images/locations-lincoln-park-hero.jpg');
+        background-position: center center;
+    }
+
+    &--locations-river-north {
+        background-image: url('../../assets/images/locations-river-north-hero.jpg');
+        background-position: center center;
+    }
+
+    &--locations-west-loop {
+        background-image: url('../../assets/images/locations-west-loop-hero.jpg');
+        background-position: center center;
+    }
 }
