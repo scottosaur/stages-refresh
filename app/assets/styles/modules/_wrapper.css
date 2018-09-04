@@ -9,4 +9,8 @@
     @mixin atLarge {
         max-width: 75%;
     }
+
+    &--centered{
+         text-align: center;
+    }
 }

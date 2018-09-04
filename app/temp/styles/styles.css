@@ -898,6 +898,10 @@ svg {
 }
     }
 
+.wrapper--centered{
+         text-align: center;
+    }
+
 .headline{
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -907,7 +911,6 @@ svg {
     line-height: 2.2rem;
 
     margin: 2.5rem auto 1.5rem auto;
-
 }
 
 .headline strong {
@@ -922,7 +925,6 @@ svg {
         margin-bottom: 0;
         font-size: 2rem;
         line-height: 2.6rem
-
 }
     }
 
@@ -931,6 +933,10 @@ svg {
 .headline--extra-margin {
             margin-bottom: 58px
     }
+    }
+
+.headline--pad-bottom {
+        padding-bottom: 1em;
     }
 
 .box {
@@ -1216,17 +1222,17 @@ svg {
     }
 
 .content-column--feed {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 
 @media (min-width: 800px) {
 
 .content-column--feed {
-      -webkit-box-ordinal-group: 2;
-          -ms-flex-order: 1;
-              order: 1
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3
   }
     }
 

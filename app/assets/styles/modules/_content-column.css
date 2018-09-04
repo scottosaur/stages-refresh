@@ -84,10 +84,10 @@
   }
 
   &--feed {
-    order: 2;
+    order: 3;
 
     @mixin atMedium {
-      order: 1;
+      order: 3;
     }
   }
 
