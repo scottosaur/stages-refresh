@@ -1610,3 +1610,23 @@ svg {
         margin-top: 145px
 }
     }
+
+.themes {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.themes--item {
+        width: 300px;
+        height: 60px;
+
+        margin: 10px;
+    }
