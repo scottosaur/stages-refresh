@@ -21,7 +21,7 @@
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="http://mstile-144x144.png" />
 
-    <link rel="stylesheet" href="assets/styles/styles-1e5884f3ce.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-e1e119957c.css"/>
     <script src="assets/scripts/Vendor-3a5f6f770e.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
         crossorigin="anonymous"></script>
@@ -168,6 +168,40 @@
     <!-- Begin Main Page Content -->
 
     <main class="main-content-area">
+
+        <style>
+            html,
+            body {
+                -webkit-overflow-scrolling: touch !important;
+                overflow: auto !important;
+                height: 100% !important;
+            }
+
+            .sawyer-scroll-wrapper {
+                -webkit-overflow-scrolling: touch;
+                overflow-y: scroll;
+            }
+
+            @media only screen and (max-width: 35.5em) {
+                .sawyer_frame {
+                    width: 90vw
+                }
+            }
+        </style>
+        <div id="scroll_wrapper" class="sawyer-scroll-wrapper">
+            <iframe id="sawyer_frame" class="sawyer_frame" src="https://www.hisawyer.com/stages-performing-arts/schedules" width="100%"
+                height="100%" style="border: none;"></iframe>
+        </div>
+        <script src="https://www.hisawyer.com/assets/embed/embed-f7fa7b9984e050f6170e556b0424351ec28384e990b0e28b94dd9139383304c3.js"></script>
+        <script type="text/javascript">
+            iFrameResize({
+                tolerance: 10,
+                heightCalculationMethod: "bodyScroll",
+                checkOrigin: false
+            });
+        </script>
+
+
 
     </main>
 
