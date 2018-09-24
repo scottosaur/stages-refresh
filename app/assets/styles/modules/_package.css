@@ -1,0 +1,43 @@
+.package {
+
+    color: #FFF;
+    background-color: $mainBlue;
+
+    margin-top: 2em;  
+
+    &__title {
+        padding: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        font-family: "Roboto Slab", serif;
+
+        h1 {
+            margin: 0;
+            // display: inline;
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: 400;
+            // display: inline;
+        }
+    }
+
+    &__content {
+        // display: none;
+        background-color: #fff;
+        color: $mainText;
+        padding: .5em;
+        font-size: 1.1em;
+        padding-left: 3em;
+        line-height: 1.7em;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}

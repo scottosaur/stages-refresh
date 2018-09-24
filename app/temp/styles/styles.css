@@ -602,6 +602,11 @@ svg {
         background-position: center center;
     }
 
+.large-hero--parties-and-events {
+        background-image: url('../../assets/images/classes-preschool-hero.jpg');
+        background-position: center center;
+    }
+
 .btn {
   outline: 0;
   color: #ffffff;
@@ -1613,7 +1618,7 @@ svg {
 
 .themes {
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1627,6 +1632,58 @@ svg {
 .themes--item {
         width: 300px;
         height: 60px;
-
         margin: 10px;
+    }
+
+.package {
+
+    color: #FFF;
+    background-color: #00acff;
+
+    margin-top: 2em;
+}
+
+.package__title {
+        padding: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        font-family: "Roboto Slab", serif;
+    }
+
+.package__title h1 {
+            margin: 0;
+            // display: inline;
+        }
+
+.package__title h2 {
+            margin: 0;
+            font-weight: 400;
+            // display: inline;
+        }
+
+.package__content {
+        // display: none;
+        background-color: #fff;
+        color: #333;
+        padding: .5em;
+        font-size: 1.1em;
+        padding-left: 3em;
+        line-height: 1.7em;
+    }
+
+.package__text {
+        text-align: center;
     }
