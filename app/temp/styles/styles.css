@@ -1479,6 +1479,19 @@ svg {
       background-color: rgba(51,204,205, 1);
     }
 
+.card--quote {
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+  }
+
+@media (min-width: 800px) {
+
+.card--quote {
+      margin: 35px auto 35px auto;
+      padding: 0
+  }
+    }
+
 .card__icon {
     color: black;
     position: absolute;
@@ -1492,15 +1505,30 @@ svg {
     padding-left: 23px;
 
     border-radius: 50%;
-    top: 30%;
   }
 
 .card__icon--left {
       left: -3rem;
+      display: none;
+    }
+
+@media (min-width: 800px) {
+
+.card__icon--left {
+        display: block
+    }
     }
 
 .card__icon--right {
-      right: -3rem;
+      top: -3rem;
+    }
+
+@media (min-width: 800px) {
+
+.card__icon--right {
+        right: -3rem;
+        top: auto
+    }
     }
 
 .container {
