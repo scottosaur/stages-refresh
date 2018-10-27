@@ -6,7 +6,7 @@
     color: $mainText;
     line-height: 2.2rem;
 
-    margin: 2.5rem auto 1.5rem auto;
+    margin: 2.5rem auto 1rem auto;
 
     strong {
         line-height: 0;

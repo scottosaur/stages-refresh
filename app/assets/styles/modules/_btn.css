@@ -38,6 +38,8 @@
     font-weight: bold;
     border: solid 2px $mainAccent;;
     color: $mainAccent;
+    margin: .5rem;
+    
   }
 
   &&--outline-white {
@@ -65,8 +67,10 @@
   &__icon-close {
     transition: opacity .3s ease-out;
     position: absolute;
-    left: 13px;
-    top: 9px;
+    margin-left: 3px;
+    margin-top: 2px;
+    /* left: 13px; */
+    /* top: 9px; */
     opacity: 0;
   }
 

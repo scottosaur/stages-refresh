@@ -5,7 +5,7 @@
   background-color: rgba(255, 255, 255, 0.6);
   flex-direction: column;
   align-items: center;
-  margin: 35px auto 35px auto;
+  margin: 35px auto 0px auto;
   max-width: 100%;
   overflow: hidden;
   transition: all 0.2s ease-out;
@@ -47,10 +47,14 @@
   &__title {
     text-align: center;
     font-family: "Roboto Slab", serif;
+    margin-top: 5px;
     margin-bottom: 5px;
     &--light {
       font-weight: 400;
     }
+    @mixin atMedium{
+      margin-top: 20px;
+    };
   }
 
   &__content {
@@ -67,10 +71,8 @@
       margin: 15px 80px 15px 80px;
       padding: 10px 25px 20px 25px;
     }
-    &--wide{
-        @mixin atMedium {
-            margin: 15px 30px 15px 30px;
-        }
+    &--wide {
+      margin: 15px 30px 15px 30px;
     }
   }
 
@@ -81,7 +83,7 @@
   }
 
   &--narrow {
-    max-width: 80%;
+    max-width: 100%;
     overflow: visible;
     @mixin atMedium {
       max-width: 60%;
@@ -89,14 +91,13 @@
   }
 
   &--pair {
-      @mixin atMedium{
-        // flex: 1;
-        max-width: 40%;
-      }
+    @mixin atMedium {
+      max-width: 40%;
+    }
   }
 
   &--flex {
-    @mixin atMedium{
+    @mixin atMedium {
       flex: 1;
       max-width: 45%;
     }
@@ -112,7 +113,7 @@
   }
 
   &--teal {
-    background-color: rgba($boxTeal, .8);
+    background-color: rgba($boxTeal, 0.8);
     color: #fff;
 
     &:hover {
@@ -123,7 +124,7 @@
   &--quote {
     margin-top: 5rem;
     padding-top: 2.5rem;
-    
+
     @mixin atMedium {
       margin: 35px auto 35px auto;
       padding: 0;
@@ -138,7 +139,7 @@
     height: 6rem;
     width: 6rem;
     background-color: white;
-    
+
     padding-top: 10px;
     padding-left: 23px;
 
@@ -154,7 +155,7 @@
 
     &--right {
       top: -3rem;
-      
+
       @mixin atMedium {
         right: -3rem;
         top: auto;

@@ -514,8 +514,7 @@ a {
     text-decoration: none;
 }
 
-svg {
-    // color: #00acff;
+section {
 }
 
 .large-hero {
@@ -651,6 +650,8 @@ svg {
     font-weight: bold;
     border: solid 2px #fd6565;;
     color: #fd6565;
+    margin: .5rem;
+    
   }
 
 .btn.btn--outline-white {
@@ -678,8 +679,10 @@ svg {
     -webkit-transition: opacity .3s ease-out;
     transition: opacity .3s ease-out;
     position: absolute;
-    left: 13px;
-    top: 9px;
+    margin-left: 3px;
+    margin-top: 2px;
+    /* left: 13px; */
+    /* top: 9px; */
     opacity: 0;
   }
 
@@ -915,7 +918,7 @@ svg {
     color: #333;
     line-height: 2.2rem;
 
-    margin: 2.5rem auto 1.5rem auto;
+    margin: 2.5rem auto 1rem auto;
 }
 
 .headline strong {
@@ -1252,22 +1255,26 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
 }
 
 @media (min-width: 800px) {
 
 .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        padding: 1rem
+                justify-content: space-evenly
+        /* padding: 1rem; */
 }
     }
 
@@ -1319,7 +1326,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 35px auto 35px auto;
+  margin: 35px auto 0px auto;
   max-width: 100%;
   overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
@@ -1381,11 +1388,19 @@ svg {
 .card__title {
     text-align: center;
     font-family: "Roboto Slab", serif;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;;
   }
 
 .card__title--light {
       font-weight: 400;
+    }
+
+@media (min-width: 800px) {
+
+.card__title {
+      margin-top: 20px;
+  }
     }
 
 .card__content {
@@ -1418,11 +1433,8 @@ svg {
   }
     }
 
-@media (min-width: 800px) {
-
-.card__content--wide{
-            margin: 15px 30px 15px 30px
-    }
+.card__content--wide {
+      margin: 15px 30px 15px 30px;
     }
 
 .card__embed {
@@ -1432,7 +1444,7 @@ svg {
   }
 
 .card--narrow {
-    max-width: 80%;
+    max-width: 100%;
     overflow: visible;
   }
 
@@ -1446,8 +1458,7 @@ svg {
 @media (min-width: 800px) {
 
 .card--pair {
-        // flex: 1;
-        max-width: 40%
+      max-width: 40%
   }
     }
 
@@ -1471,7 +1482,7 @@ svg {
     }
 
 .card--teal {
-    background-color: rgba(51,204,205, .8);
+    background-color: rgba(51,204,205, 0.8);
     color: #fff;
   }
 
@@ -1500,7 +1511,7 @@ svg {
     height: 6rem;
     width: 6rem;
     background-color: white;
-    
+
     padding-top: 10px;
     padding-left: 23px;
 
@@ -1534,7 +1545,7 @@ svg {
 .container {
     
     padding-top: 1px;
-    padding-bottom: 1px;
+    padding-bottom: 35px;
 }
 
 .container--blue{
