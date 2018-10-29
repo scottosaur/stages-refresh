@@ -10561,7 +10561,7 @@ var StickyHeader = function () {
         this.createHeaderWaypoint();
 
         this.pageSections = (0, _jquery2.default)(".page-section");
-        this.headerLinks = (0, _jquery2.default)(".primary-nav li");
+        this.headerLinks = (0, _jquery2.default)(".primary-nav ul li");
 
         this.createPageSectionWaypoints();
         this.addSmoothScrolling();
@@ -10578,13 +10578,13 @@ var StickyHeader = function () {
     }, {
         key: 'addSmoothScrolling',
         value: function addSmoothScrolling() {
-            this.headerLinks.smoothScroll();
+            (0, _jquery2.default)('a[href*="#"]').smoothScroll({ 'offset': -110 });
         }
     }, {
         key: 'createHeaderWaypoint',
         value: function createHeaderWaypoint() {
             var that = this;
-            console.log('this');
+
             new Waypoint({
                 element: this.headerTriggerElement[0],
                 handler: function handler(direction) {

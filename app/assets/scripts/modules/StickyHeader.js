@@ -10,7 +10,7 @@ class StickyHeader {
         this.createHeaderWaypoint();
 
         this.pageSections = $(".page-section");
-        this.headerLinks = $(".primary-nav li");
+        this.headerLinks = $(".primary-nav ul li");
 
         this.createPageSectionWaypoints();
         this.addSmoothScrolling();
@@ -24,12 +24,12 @@ class StickyHeader {
     }
 
     addSmoothScrolling() {
-        this.headerLinks.smoothScroll();
+        $('a[href*="#"]').smoothScroll({'offset':-110});
     }
 
     createHeaderWaypoint() {
         var that = this;
-        console.log('this')
+        
         new Waypoint({
             element: this.headerTriggerElement[0],
             handler: function (direction) {

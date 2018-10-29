@@ -1,5 +1,6 @@
 .btn {
   outline: 0;
+  display: inline-block;
   color: #ffffff;
   padding: 9px 12px 9px 12px;
   font-size: 1.2rem;
@@ -9,7 +10,7 @@
   text-shadow: none;
   position: relative;
   text-align: center;
-
+  
   transition: all .2s ease-in;
 
   &--centered {
@@ -39,7 +40,6 @@
     border: solid 2px $mainAccent;;
     color: $mainAccent;
     margin: .5rem;
-    
   }
 
   &&--outline-white {
@@ -47,6 +47,9 @@
     font-weight: bold;
     border: solid 2px $mainWhite;
     color: $mainWhite;
+    /* margin: auto; */
+    margin-top: .6rem;
+    margin-bottom: .6rem;
   }
 
   &--opened {
