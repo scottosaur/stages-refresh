@@ -1,7 +1,8 @@
-For the Top Bubble photo can we use the original that has a cooler feel to it? The one currently on there feels too dark to me. Also, is there a decent crop that would get rid of the water bottle and sheet music binder?
+Photoshop index hero image to remove water bottle, notebook label
 
-Stagesis a Chicago-based Performing Arts Company offering one-of-a-kind classes, camps, and birthday party entertainment for children of all ages. 
+Make location links on class pages actual links (and add missing)
 
-Age Group Headings - Descriptions are good but would love to be consistent with abbreviations so either Newborn–18 Months or Nb –18mo, etc.
+Can we add a button to the class description that families can click that will link them to a page where they can see all of that particular class’s days/times/locations? The new enrollment platform allows us to customize widgets but I think we could also link it to an external page if that’s easier.
 
-Locations –Add Western Springs & Evanston
+Classes 18mo-3yr Hero Image Needed
+
