@@ -563,18 +563,22 @@ a {
 
 .large-hero--classes-infant-toddler {
         background-image: url('../../assets/images/classes-infant-toddler-hero.jpg');
+        background-position: center center;
     }
 
 .large-hero--classes-preschool-prep {
         background-image: url('../../assets/images/classes-preschool-prep-hero.jpg');
+        background-position: center center;
     }
 
 .large-hero--classes-preschool {
         background-image: url('../../assets/images/classes-preschool-hero.jpg');
+        background-position: center center;
     }
 
 .large-hero--classes-grade-school {
         background-image: url('../../assets/images/classes-grade-school-hero.jpg');
+        background-position: center center;
     }
 
 .large-hero--locations-highland-park {
@@ -598,7 +602,7 @@ a {
     }
 
 .large-hero--parties-and-events {
-        background-image: url('../../assets/images/classes-preschool-hero.jpg');
+        background-image: url('../../assets/images/parties-and-events-hero.jpg');
         background-position: center center;
     }
 
