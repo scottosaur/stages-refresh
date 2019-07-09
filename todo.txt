@@ -1,8 +1,7 @@
-Photoshop index hero image to remove water bottle, notebook label
+x Photoshop index hero image to remove water bottle, notebook label
 
 Make location links on class pages actual links (and add missing)
 
-Can we add a button to the class description that families can click that will link them to a page where they can see all of that particular class’s days/times/locations? The new enrollment platform allows us to customize widgets but I think we could also link it to an external page if that’s easier.
-
 Classes 18mo-3yr Hero Image Needed
 
+Can we add a button to the class description that families can click that will link them to a page where they can see all of that particular class’s days/times/locations? The new enrollment platform allows us to customize widgets but I think we could also link it to an external page if that’s easier.
