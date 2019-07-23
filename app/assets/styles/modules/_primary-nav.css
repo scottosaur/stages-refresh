@@ -70,7 +70,6 @@
   }
 
   &__drop-link:hover > ul {
-    // display: inherit;
     visibility: visible;
     opacity: 1;
   }
@@ -84,8 +83,6 @@
   }
 
   &__active {
-    // transform-origin: bottom center;
-    // transform: scale(1.1);
     position: absolute;
 
     a {
