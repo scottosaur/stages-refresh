@@ -606,6 +606,10 @@ a {
         background-position: center center;
     }
 
+.body-text {
+    line-height: 1.5;
+}
+
 .btn {
   outline: 0;
   display: inline-block;
@@ -818,9 +822,9 @@ a {
     position: absolute;
     text-decoration: none;
     padding: 10px 25px 25px 25px;
-    min-width: 225px;
+    min-width: 245px;
     left: -25px;
-    top: 39px;
+    top: 41px;
   }
 
 .primary-nav__drop-menu::before {
@@ -891,64 +895,115 @@ a {
     }
 
 .wrapper {
-    /* max-width: 90%; */
-    margin: auto;
+  /* max-width: 90%; */
+  margin: auto;
 }
 
 @media (min-width: 800px) {
 
 .wrapper {
-        max-width: 80%
+    max-width: 80%
 }
     }
 
 @media (min-width: 1010px) {
 
 .wrapper {
-        max-width: 75%
+    max-width: 75%
 }
     }
 
-.wrapper--centered{
-         text-align: center;
-    }
-
-.headline{
-    font-family: 'Roboto Slab', serif;
+.wrapper--centered {
     text-align: center;
-    font-weight: 100;
-    font-size: 1.3rem;
-    color: #333;
-    line-height: 2.2rem;
+  }
 
-    margin: 2.5rem auto 1rem auto;
-}
-
-.headline strong {
-        line-height: 0;
-        color: #333;
-        font-family: 'channelregular', 'Roboto Slab', serif;
-    }
+.wrapper--padded {
+      padding-top: 1px;
+  }
 
 @media (min-width: 800px) {
 
-.headline{
-        margin-bottom: 0;
-        font-size: 2rem;
-        line-height: 2.6rem
+.wrapper--narrow {
+      max-width: 65%
+  }
+    }
+
+@media (min-width: 1010px) {
+
+.wrapper--narrow {
+      max-width: 65%
+  }
+    }
+
+.headline {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 2.2rem;
+
+  margin: 2.5rem auto 1rem auto;
+}
+
+.headline strong {
+    line-height: 0;
+    color: #333;
+    font-family: "channelregular", "Roboto Slab", serif;
+  }
+
+@media (min-width: 800px) {
+
+.headline {
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 2.6rem
 }
     }
 
 @media (min-width: 800px) {
 
 .headline--extra-margin {
-            margin-bottom: 58px
-    }
+      margin-bottom: 58px
+  }
     }
 
 .headline--pad-bottom {
-        padding-bottom: 1em;
-    }
+    padding-bottom: 1em;
+  }
+
+.headline--left {
+    text-align: left;
+  }
+
+.headline--purple {
+    font-weight: 400;
+    color: #9966cc;
+  }
+
+.headline--green {
+    font-weight: 400;
+    color: #81d7c0;
+  }
+
+.headline--red {
+    font-weight: 400;
+    color: #fd6565;
+  }
+
+.headline--blue {
+    font-weight: 400;
+    color: #00acff;
+  }
+
+.headline--white {
+      font-weight: 400;
+      color: #fff;
+  }
+
+.headline__banner {
+      background-color: #00acff;
+  }
 
 .box {
   
@@ -1312,6 +1367,12 @@ a {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         padding: 1em 0 1em 0;
+    }
+
+.row__item {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
     }
 
 .card {

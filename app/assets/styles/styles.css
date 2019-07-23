@@ -5,6 +5,7 @@
 @import "base/_global";
 
 @import "modules/_large-hero";
+@import "modules/_body-text";
 @import "modules/_btn";
 @import "modules/_header";
 @import "modules/_primary-nav";
