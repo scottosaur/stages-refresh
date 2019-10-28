@@ -1,16 +1,30 @@
 .wrapper {
-    /* max-width: 90%; */
-    margin: auto;
+  /* max-width: 90%; */
+  margin: auto;
 
+  @mixin atMedium {
+    max-width: 80%;
+  }
+
+  @mixin atLarge {
+    max-width: 75%;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--padded {
+      padding-top: 1px;
+  }
+
+  &--narrow {
     @mixin atMedium {
-        max-width: 80%;
+      max-width: 65%;
     }
 
     @mixin atLarge {
-        max-width: 75%;
+      max-width: 65%;
     }
-
-    &--centered{
-         text-align: center;
-    }
+  }
 }

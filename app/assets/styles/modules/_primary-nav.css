@@ -24,9 +24,9 @@
     position: absolute;
     text-decoration: none;
     padding: 10px 25px 25px 25px;
-    min-width: 225px;
+    min-width: 245px;
     left: -25px;
-    top: 39px;
+    top: 41px;
 
     &::before {
       z-index: 1;
@@ -70,7 +70,6 @@
   }
 
   &__drop-link:hover > ul {
-    // display: inherit;
     visibility: visible;
     opacity: 1;
   }
@@ -84,8 +83,6 @@
   }
 
   &__active {
-    // transform-origin: bottom center;
-    // transform: scale(1.1);
     position: absolute;
 
     a {

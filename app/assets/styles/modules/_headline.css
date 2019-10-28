@@ -1,32 +1,65 @@
-.headline{
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-    font-weight: 100;
-    font-size: 1.3rem;
+.headline {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: $mainText;
+  line-height: 2.2rem;
+
+  margin: 2.5rem auto 1rem auto;
+
+  strong {
+    line-height: 0;
     color: $mainText;
-    line-height: 2.2rem;
+    font-family: "channelregular", "Roboto Slab", serif;
+  }
 
-    margin: 2.5rem auto 1rem auto;
+  @mixin atMedium {
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
 
-    strong {
-        line-height: 0;
-        color: $mainText;
-        font-family: 'channelregular', 'Roboto Slab', serif;
-    }
-
+  &--extra-margin {
     @mixin atMedium {
-        margin-bottom: 0;
-        font-size: 2rem;
-        line-height: 2.6rem;
+      margin-bottom: 58px;
     }
+  }
 
-    &--extra-margin {
-        @mixin atMedium {
-            margin-bottom: 58px;
-        }
-    }
+  &--pad-bottom {
+    padding-bottom: 1em;
+  }
 
-    &--pad-bottom {
-        padding-bottom: 1em;
-    }
+  &--left {
+    text-align: left;
+  }
+
+  &--purple {
+    font-weight: 400;
+    color: $boxPurple;
+  }
+
+  &--green {
+    font-weight: 400;
+    color: $boxGreen;
+  }
+
+  &--red {
+    font-weight: 400;
+    color: $boxRed;
+  }
+
+  &--blue {
+    font-weight: 400;
+    color: $mainBlue;
+  }
+
+  &--white {
+      font-weight: 400;
+      color: $mainWhite;
+  }
+
+  &__banner {
+      background-color: $mainBlue;
+  }
 }
