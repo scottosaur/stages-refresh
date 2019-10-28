@@ -450,10 +450,6 @@ template {
   display: none;
 }
 
-// $mainAccent: #FF8900;
-
-// $mainAccent: #33cccd;
-
 // .color-primary-0 { color: #00ACFF }
 
 /* Main Primary color */
@@ -867,7 +863,6 @@ a {
   }
 
 .primary-nav__drop-link:hover > ul {
-    // display: inherit;
     visibility: visible;
     opacity: 1;
   }
@@ -881,8 +876,6 @@ a {
   }
 
 .primary-nav__active {
-    // transform-origin: bottom center;
-    // transform: scale(1.1);
     position: absolute;
   }
 
@@ -1018,11 +1011,11 @@ a {
   -webkit-transition: all 0.2s ease-out;
 
   transition: all 0.2s ease-out;
+  -webkit-transform-origin: center -25px;
+          transform-origin: center -25px;
 }
 
 .box:hover {
-    -webkit-transform-origin: center -25px;
-            transform-origin: center -25px;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     z-index: 3;

@@ -9,9 +9,9 @@
   margin-top: 285px;
 
   transition: all 0.2s ease-out;
+  transform-origin: center -25px;
 
   &:hover {
-    transform-origin: center -25px;
     transform: scale(1.1);
     z-index: 3;
   }
