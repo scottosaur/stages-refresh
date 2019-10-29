@@ -488,6 +488,8 @@ template {
 }
 
 body {
+    /* max-width: 1400px;
+    margin: auto; */
     font-family: 'Roboto', sans-serif;
     color: #333;
     position: relative;
@@ -820,7 +822,7 @@ a {
     padding: 10px 25px 25px 25px;
     min-width: 245px;
     left: -25px;
-    top: 41px;
+    top: 42px;
   }
 
 .primary-nav__drop-menu::before {
@@ -902,7 +904,7 @@ a {
 @media (min-width: 1010px) {
 
 .wrapper {
-    max-width: 75%
+    max-width: 1200px
 }
     }
 
@@ -1611,14 +1613,14 @@ a {
 }
 
 .container--blue{
-        // background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+        /* // background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
         // background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
         // background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
         // background-image: url("https://www.transparenttextures.com/patterns/simple-horizontal-light.png");
         // background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
         // background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
         // background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
-        // background-color: #00acff;
+        // background-color: $mainBlue; */
         background-color: #33cccd;
     }
 

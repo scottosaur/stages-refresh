@@ -1,6 +1,6 @@
 {
-  "name": "travel-site",
-  "version": "1.0.0",
+  "name": "stages-refresh",
+  "version": "0.5.0",
   "scripts": {
     "webpack": "webpack",
     "watch": "gulp watch"
